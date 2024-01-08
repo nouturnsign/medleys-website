@@ -5,7 +5,7 @@ module.exports = (function(eleventyConfig) {
         dir: {
             input: "src",
         },
-        templateFormats: ["html","png","svg","jpg","css","js","pdf"]
+        templateFormats: ["html","png","svg","jpg","css","js","pdf","woff","woff2"]
     };
 
 });

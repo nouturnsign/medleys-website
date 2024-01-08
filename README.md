@@ -8,4 +8,4 @@ Run `npm ci` to install dependencies.
 
 # Modifications
 
-View the site live by starting a local server with `npm run start`. When you're done making changes in the src folder, run `npm run build` to rebuild the _site folder using Eleventy. Push changes to deploy.
+View the site live by starting a local server with `npm run start`. To preview your changes, run `npm run build` to rebuild the site using Eleventy. Push changes to deploy.
