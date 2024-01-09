@@ -6,8 +6,21 @@
     font-style: normal;
 }
 
+body {
+    color: black;
+}
+
 h1 {
     font-family: 'luckybonesbold';
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Poppins';
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 :root {
@@ -24,60 +37,37 @@ body {
     padding-left: 20px;
 }
 
-.parallax-container {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    color: var(--color);
-    row-gap: 4rem;
-
-    text-align: center;
-    bottom: 0;
-}
-
-.purple-section {
-    width: 100%;
-    min-height: 100vh;
-    background-color: var(--color);
-}
-
-p {
-    max-width: 100ch;
-    line-height: 1.5;
-}
-
 .title-logo {
     position: absolute;
+    left: 50%;
     bottom: 15%;
 }
 
 @media (max-width: 575px) {
     .title-logo {
         width: 300px;
+        margin-left: -150px;
     }
 }
 
 @media (min-width: 576px) {
     .title-logo {
         width: 400px;
+        margin-left: -200px;
     }
 }
 
 @media (min-width: 768px) {
     .title-logo {
         width: 500px;
+        margin-left: -250px;
     }
 }
 
 @media (min-width: 1200px) {
     .title-logo {
         width: 600px;
+        margin-left: -300px;
     }
 }
 
@@ -118,20 +108,55 @@ a.nav-item.nav-link.active {
     background: none;
     border-radius: 0;
     padding: 0;
-    height: 28px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    height: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
     opacity: 0.5;
     transition: all .15s ease-in-out;
     font-size: 1rem;
     align-items: center;
     display: flex;
+    color: rgba(0,0,0,1);
 }
+
 
 .navbar-toggler:hover {
     opacity: 1;
 }
 
-.navbar-toggler-icon {
-    margin-left: 5px;
+.icon-link {
+    opacity: 0.5;
+    transition: all .15s ease-in-out;
+}
+
+.icon-link:hover {
+    opacity: 1;
+}
+
+.menu-button {
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/menu.svg");
+    margin-left: 10px;
+}
+
+.jumbotron {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100vh;
+    min-height: 40vw;    
+}
+
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.content-wrap {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
