@@ -8,6 +8,7 @@
 
 body {
     color: black;
+    line-height: 1.5;
 }
 
 h1 {
@@ -37,37 +38,49 @@ body {
     padding-left: 20px;
 }
 
-.title-logo {
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.display-title {
     position: absolute;
     left: 50%;
-    bottom: 15%;
+    bottom: 30%;
+    transform: translate(-50%, 50%);
+    margin: 0;
 }
 
 @media (max-width: 575px) {
     .title-logo {
         width: 300px;
-        margin-left: -150px;
+    }
+    .display-title {
+        font-size: 60px;
     }
 }
 
 @media (min-width: 576px) {
     .title-logo {
         width: 400px;
-        margin-left: -200px;
+    }
+    .display-title {
+        font-size: 60px;
     }
 }
 
 @media (min-width: 768px) {
     .title-logo {
         width: 500px;
-        margin-left: -250px;
+    }
+    .display-title {
+        font-size: 80px;
     }
 }
 
 @media (min-width: 1200px) {
     .title-logo {
         width: 600px;
-        margin-left: -300px;
     }
 }
 
@@ -146,8 +159,8 @@ a.nav-item.nav-link.active {
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
-    height: 100vh;
-    min-height: 40vw;    
+    height: calc(100vh - 64px);
+    min-height: 50vw;
 }
 
 .container {
@@ -157,6 +170,6 @@ a.nav-item.nav-link.active {
 
 .content-wrap {
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
