@@ -82,6 +82,9 @@ body {
     .title-logo {
         width: 600px;
     }
+    .container-md {
+        max-width: 1140px;
+    }
 }
 
 .navbar {
@@ -140,17 +143,13 @@ a.nav-item.nav-link.active {
 .icon-link {
     opacity: 0.5;
     transition: all .15s ease-in-out;
+    height: 2em;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .icon-link:hover {
     opacity: 1;
-}
-
-.menu-button {
-    width: 20px;
-    height: 20px;
-    background-image: url("../assets/menu.svg");
-    margin-left: 10px;
 }
 
 .jumbotron {
@@ -172,4 +171,14 @@ a.nav-item.nav-link.active {
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.footer {
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    padding: 0;
+    
+    text-align: center;
+    color: black;
 }
