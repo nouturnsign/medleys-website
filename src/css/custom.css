@@ -107,7 +107,7 @@ body {
 
 .navbar {
     padding: 10px 0px;
-    transition: all .15s ease-in-out;
+    transition: all .2s ease-in-out;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
@@ -126,7 +126,7 @@ a.nav-item.nav-link {
     color: rgba(0,0,0,0.5);
     font-weight: 500;
     border: none;
-    transition: all .15s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 a.nav-item.nav-link:hover {
@@ -146,7 +146,7 @@ a.nav-item.nav-link.active {
     margin-top: 12px;
     margin-bottom: 12px;
     opacity: 0.5;
-    transition: all .15s ease-in-out;
+    transition: all .2s ease-in-out;
     font-size: 1rem;
     align-items: center;
     display: flex;
@@ -160,7 +160,7 @@ a.nav-item.nav-link.active {
 
 .icon-link {
     opacity: 0.5;
-    transition: all .15s ease-in-out;
+    transition: all .2s ease-in-out;
     height: 2em;
     margin-left: 20px;
     margin-right: 20px;
@@ -240,7 +240,7 @@ a.nav-item.nav-link.active {
 .more-link {
     opacity: 0.5;
     color: rgba(0,0,0,1);
-    transition: all .15s ease-in-out;
+    transition: all .2s ease-in-out;
     text-decoration: none;
 }
 
@@ -271,7 +271,7 @@ a.nav-item.nav-link.active {
     border-radius: 0px;
     border: 0px;
     color: black;
-    transition: all .15s ease-in-out;
+    transition: all .2s ease-in-out;
     line-height: 1.5;
 }
 
@@ -287,12 +287,17 @@ a.nav-item.nav-link.active {
     border-radius: 0px;
     border: 0px;
     color: black;
-    transition: all .15s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.accordion-button:hover {
+    color: white;
+    background-color: rgb(54 52 96) !important;
 }
 
 .accordion-button:focus {
     color: white;
-    background-color: rgb(54 52 96);
+    background-color: rgb(54 52 96) !important;
 }
 
 .accordion-button:not(.collapsed), .accordion-button:not(.collapsed):focus {
