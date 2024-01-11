@@ -259,5 +259,53 @@ a.nav-item.nav-link.active {
 .accordion-item {
     margin-top: 20px;
     margin-bottom: 20px;
-    border: none;
+    border: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.accordion-button {
+    padding: 20px;
+    text-decoration: none;
+    width: 100%;
+    background-color: white;
+    border-radius: 0px;
+    border: 0px;
+    color: black;
+    transition: all .15s ease-in-out;
+}
+
+.accordion-header {
+    color: white;
+}
+
+.accordion-body {
+    padding: 20px;
+    text-decoration: none;
+    width: 100%;
+    background-color: white;
+    border-radius: 0px;
+    border: 0px;
+    color: black;
+    transition: all .15s ease-in-out;
+}
+
+.accordion-button:focus {
+    color: white;
+    background-color: rgb(54 52 96);
+}
+
+.accordion-button:not(.collapsed), .accordion-button:not(.collapsed):focus {
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+    color: white;
+    background-color: rgb(54 52 96);
+}
+
+.accordion-button::after {
+    background-image: initial;
+    width: 0;
+}
+  
+.accordion-button:not(.collapsed)::after {
+    background-image: initial;
+    width: 0;
 }
