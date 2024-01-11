@@ -46,8 +46,8 @@ body {
 .display-title {
     position: absolute;
     left: 50%;
-    bottom: 30%;
-    transform: translate(-50%, 50%);
+    bottom: calc(0% + 60px);
+    transform: translateX(-50%);
     margin: 0;
 }
 
@@ -154,12 +154,11 @@ a.nav-item.nav-link.active {
 
 .jumbotron {
     padding: 0;
-    margin: 0;
+    margin: 64px 0 0 0;
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
-    height: 100vh;
-    min-height: 50vw;
+    height: 50vw;
 }
 
 .container {
@@ -207,7 +206,7 @@ a.nav-item.nav-link.active {
     padding: 10px;
     text-align: center;
 }
-
+ju
 .row {
     margin: -10px -10px 10px -10px;
 }
