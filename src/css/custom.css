@@ -272,6 +272,7 @@ a.nav-item.nav-link.active {
     border: 0px;
     color: black;
     transition: all .15s ease-in-out;
+    line-height: 1.5;
 }
 
 .accordion-header {
