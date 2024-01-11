@@ -59,7 +59,7 @@ body {
         font-size: 60px;
     }
     .jumbotron {
-        height: 70vw;
+        height: 300px;
     }
 }
 
@@ -71,7 +71,7 @@ body {
         font-size: 60px;
     }
     .jumbotron {
-        height: 50vw;
+        height: 400px;
     }
 }
 
@@ -82,14 +82,27 @@ body {
     .display-title {
         font-size: 80px;
     }
+    .jumbotron {
+        height: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .jumbotron {
+        height: 600px;
+        min-height: 50vw;
+    }
 }
 
 @media (min-width: 1200px) {
     .title-logo {
-        width: 600px;
+        width: 700px;
     }
     .container-md {
         max-width: 1140px;
+    }
+    .jumbotron {
+        height: 700px;
     }
 }
 
