@@ -204,12 +204,12 @@ a.nav-item.nav-link.active {
 }
 
 .col {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 .row {
-    margin: 20px -20px 0 -20px;
+    margin: -10px -10px 10px -10px;
 }
 
 .caption {
