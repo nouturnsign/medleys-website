@@ -90,7 +90,6 @@ body {
 @media (min-width: 992px) {
     .jumbotron {
         height: 600px;
-        min-height: 50vw;
     }
 }
 
@@ -177,6 +176,7 @@ a.nav-item.nav-link.active {
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
+    min-height: 50vw;
 }
 
 .container {
@@ -254,4 +254,10 @@ a.nav-item.nav-link.active {
 
 .shadow {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15) !important;
+}
+
+.accordion-item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
 }
