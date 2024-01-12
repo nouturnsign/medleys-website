@@ -46,7 +46,6 @@ body {
 .display-title {
     position: absolute;
     left: 50%;
-    bottom: calc(0% + 60px);
     transform: translateX(-50%);
     margin: 0;
 }
@@ -61,9 +60,14 @@ body {
     }
     .display-title {
         font-size: 60px;
+        bottom: calc(0% + 40px);
     }
     .jumbotron {
         height: 300px;
+    }
+    .content-wrap {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
@@ -73,9 +77,14 @@ body {
     }
     .display-title {
         font-size: 60px;
+        bottom: calc(0% + 40px);
     }
     .jumbotron {
         height: 400px;
+    }
+    .content-wrap {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
@@ -85,9 +94,14 @@ body {
     }
     .display-title {
         font-size: 80px;
+        bottom: calc(0% + 60px);
     }
     .jumbotron {
         height: 500px;
+    }
+    .content-wrap {
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
 
@@ -190,8 +204,6 @@ a.nav-item.nav-link.active {
 
 .content-wrap {
     margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .footer {
