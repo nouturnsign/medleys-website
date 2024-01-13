@@ -304,7 +304,7 @@ a.nav-item.nav-link.active {
 }
 
 .accordion-button {
-    padding: 20px;
+    padding: 20px !important;
     text-decoration: none;
     width: 100%;
     background-color: white;
@@ -313,6 +313,20 @@ a.nav-item.nav-link.active {
     color: black;
     transition: all .2s ease-in-out;
     line-height: 1.5;
+}
+
+.blue-btn {
+    padding: 20px !important;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 0px;
+    border: 0px;
+    color: black;
+    transition: all .2s ease-in-out;
+    line-height: 1.5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .accordion-header {
@@ -330,12 +344,12 @@ a.nav-item.nav-link.active {
     transition: all .2s ease-in-out;
 }
 
-.accordion-button:hover {
+.accordion-button:hover, .blue-btn:hover {
     color: white;
     background-color: rgb(54 52 96) !important;
 }
 
-.accordion-button:focus {
+.accordion-button:focus, .blue-btn:focus {
     color: white;
     background-color: rgb(54 52 96) !important;
 }
@@ -354,4 +368,15 @@ a.nav-item.nav-link.active {
 .accordion-button:not(.collapsed)::after {
     background-image: initial;
     width: 0;
+}
+
+ol li {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+ol {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
