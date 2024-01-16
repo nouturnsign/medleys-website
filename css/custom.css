@@ -221,7 +221,6 @@ a.nav-item.nav-link.active {
     width: 100%;
     background-color: white;
     padding: 0;
-    
     text-align: center;
     color: black;
 }
@@ -325,7 +324,7 @@ a.nav-item.nav-link.active {
     line-height: 1.5;
 }
 
-.blue-btn {
+.blue-btn, .red-btn {
     padding: 20px !important;
     text-decoration: none;
     background-color: white;
@@ -362,6 +361,16 @@ a.nav-item.nav-link.active {
 .accordion-button:focus, .blue-btn:focus {
     color: white;
     background-color: rgb(54 52 96) !important;
+}
+
+.red-btn:hover {
+    color: white;
+    background-color: #C13245 !important;
+}
+
+.red-btn:focus {
+    color: white;
+    background-color: #C13245 !important;
 }
 
 .accordion-button:not(.collapsed), .accordion-button:not(.collapsed):focus {
