@@ -156,7 +156,8 @@ a.nav-item.nav-link.active {
 }
 
 .navbar-toggler {
-    border: none;
+    border: 0;
+    outline: none;
     background: none;
     border-radius: 0;
     padding: 0;
@@ -176,6 +177,11 @@ a.nav-item.nav-link.active {
     opacity: 1;
 }
 
+.navbar-toggler:focus {
+    outline: none !important;
+    opacity: 1;
+}
+
 .icon-link {
     opacity: 0.5;
     transition: all .2s ease-in-out;
@@ -185,6 +191,10 @@ a.nav-item.nav-link.active {
 }
 
 .icon-link:hover {
+    opacity: 1;
+}
+
+.icon-link:focus {
     opacity: 1;
 }
 
