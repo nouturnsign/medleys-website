@@ -422,3 +422,43 @@ ol li::before {
     font-size: 40px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
+
+.history-card {
+    width: 100%;
+    padding-bottom: 100%;
+    float: left;
+    perspective: 500px;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+}
+
+.history-card:hover .content {
+    transform: rotateY(180deg) ;
+    transition: transform 0.4s;
+}
+
+.front,
+.back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #C13245;
+    line-height: 300px;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    backface-visibility: hidden;
+}
+
+.back {
+    background: white;
+    color: black;
+    transform: rotateY(180deg);
+}
