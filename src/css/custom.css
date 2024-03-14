@@ -519,3 +519,8 @@ ol li::before {
     --bs-btn-disabled-border-color: rgb(54 52 96);
     --bs-gradient: none;
 }
+
+.embed-responsive-item {
+    width: 100%;
+    min-height: 60vh;
+}
