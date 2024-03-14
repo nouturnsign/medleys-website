@@ -7,15 +7,15 @@ var isCarouselPlaying = false;
 function onYouTubeIframeAPIReady() {
     player1 = new YT.Player("gallery-player-1", {
         events: {
-            "onReady": onPlayer1Ready,
-            "onStateChange": onPlayerStateChange
-        }
+            onReady: onPlayer1Ready,
+            onStateChange: onPlayerStateChange,
+        },
     });
     player2 = new YT.Player("gallery-player-2", {
         events: {
-            "onReady": onPlayer2Ready,
-            "onStateChange": onPlayerStateChange
-        }
+            onReady: onPlayer2Ready,
+            onStateChange: onPlayerStateChange,
+        },
     });
 }
 
@@ -30,20 +30,15 @@ function onPlayer2Ready() {
         player2.pauseVideo();
     });
 }
-  
+
 function onPlayerStateChange(event) {
     const playerState = event.target.getPlayerState();
-    console.log("to change state");
     carouselBootstrap = bootstrap.Carousel.getInstance(carouselDiv);
-    if (playerState == 1 || playerState == 3) // playing or buffering
-    {
-        console.log("to pause")
+    if (playerState == 1 || playerState == 3) {
+        // playing or buffering
         carouselBootstrap.pause();
         isCarouselPlaying = true;
-    }
-    else if (isCarouselPlaying)
-    {
-        console.log("to cycle")
+    } else if (isCarouselPlaying) {
         carouselBootstrap.cycle();
         isCarouselPlaying = false;
     }
