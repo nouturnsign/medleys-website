@@ -524,3 +524,9 @@ ol li::before {
     width: 100%;
     min-height: 70vh;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
