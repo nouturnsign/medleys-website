@@ -1,0 +1,50 @@
+[
+    {
+        "section": "Sopranos",
+        "section-label": "SOPRANO",
+        "is-light-color": true,
+        "members": [
+            {
+                "name": "Claire Chien",
+                "pronouns": "she/her",
+                "slug": "claire-chien",
+                "img-src": "ClaireC.jpg",
+                "leadership-position": "Love Notes Manager",
+                "more-info": {
+                    "major": "Computer Science, 2026",
+                    "hometown": "Irvine, CA",
+                    "interests": "Reading, birdwatching, hiking, baking, and rug tufting",
+                    "fun-fact": "I love soup!!!",
+                    "audition-song": "What Was I Made For? by Billie Eilish",
+                    "shower-song": "Still Into You – Paramore",
+                    "musical-artist": "Taylor Swift",
+                    "quote": "“Not everyone can become a great artist, but a great artist can come from anywhere.” – Anton Ego (Ratatouille)"
+                }
+            }
+        ]
+    },
+    {
+        "section": "Altos",
+        "section-label": "ALTO",
+        "is-light-color": false,
+        "members": [
+            {
+                "name": "Joy Cheng",
+                "pronouns": "she/her",
+                "slug": "joy-cheng",
+                "img-src": "Joy.png",
+                "leadership-position": "Manager & Web Master",
+                "more-info": {
+                    "major": "Computer Science, 2026",
+                    "hometown": "Culver City, CA",
+                    "interests": "I love formatting things, solving logic puzzles, and folding origami!",
+                    "fun-fact": "I have a Betta fish named Beethoven",
+                    "audition-song": "Colors of the Wind by Stephen Schwartz",
+                    "shower-song": "Any angsty musical theater song",
+                    "musical-artist": "Laufey or Adele",
+                    "quote": "“The whole world is a series of miracles, but we’re so used to them we call them ordinary things.” – Hans Christian Anderson"
+                }
+            }
+        ]
+    }
+]

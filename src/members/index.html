@@ -21,24 +21,32 @@ root: ../
                 <h1 class="display-title" style="color: white;">Members</h1>
             </div>
         </div>
+        {%- for member-info in member-info-list -%}
+        {%- if member-info.is-light-color -%}
         <div class="content-wrap" style="background-color: #ffd4dc;">
             <div class="container-md" style="text-align: left; color: black;">
-                <h1 style="color: rgb(54 52 96);">Sopranos</h1>
+                <h1 style="color: rgb(54 52 96);">{{ member-info.section }}</h1>
+        {%- else -%}
+        <div class="content-wrap" style="background-color: rgb(54 52 96);">
+            <div class="container-md" style="text-align: left; color: white;">
+                <h1 style="color: #ffd4dc;">{{ member-info.section }}</h1>
+        {%- endif -%}
                 <div class="row portrait-row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 justify-content-left">
+                    {%- for member in member-info.members -%}
                     <section class="col">
                         <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/ClaireC.jpg" class="portrait shadow" alt="Claire Chien">
+                            <img src="{{root}}assets/photos/members/{{member.img-src}}" class="portrait shadow" alt={{member.name}}>
                         </div>
-                        <p class="lead name">Claire Chien</p>
-                        <p class="caption">Love Notes Manager</p>
+                        <p class="lead name">{{ member.name }}</p>
+                        <p class="caption">{{ member.leadership-position }}</p>
                         <p class="caption">
-                            <a class="dark-link" data-bs-toggle="modal" data-bs-target="#modal-member-claire-chien">More</a>
+                            <a class="dark-link" data-bs-toggle="modal" data-bs-target="#modal-member-{{member.slug}}">More</a>
                         </p>
-                        <div class="modal modal-lg fade" id="modal-member-claire-chien" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+                        <div class="modal modal-lg fade" id="modal-member-{{member.slug}}" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Claire Chien (she/her)</h5>
+                                        <h5 class="modal-title">{{ member.name }} ({{ member.pronouns }})</h5>
                                         <button type="button" class="btn btn-outline-custom close" data-bs-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -47,49 +55,19 @@ root: ../
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-lg pt-lg-0">
-                                                    <img src="{{root}}assets/photos/members/ClaireC.jpg" class="img-fluid rounded" alt="Claire Chien">
+                                                    <img src="{{root}}assets/photos/members/{{member.img-src}}" class="img-fluid rounded" alt="{{member.name}}">
                                                 </div>
                                                 <div class="col-lg text-start d-flex flex-column">
-                                                    <p class="fst-italic">SOPRANO</p>
+                                                    <p class="fst-italic" style="text-transform:uppercase">{{ member-info.section-label }}</p>
                                                     <p>
-                                                        Major:
-                                                        <br>
-                                                        Computer Science, 2026
-                                                        <br>
-                                                        <br>
-                                                        Hometown:
-                                                        <br>
-                                                        Irvine, CA
-                                                        <br>
-                                                        <br>
-                                                        Interests:
-                                                        <br>
-                                                        Reading, birdwatching, hiking, baking, and rug tufting
-                                                        <br>
-                                                        <br>
-                                                        Fun Fact:
-                                                        <br>
-                                                        I love soup!!!
-                                                        <br>
-                                                        <br>
-                                                        Audition Song:
-                                                        <br>
-                                                        What Was I Made For? by Billie Eilish
-                                                        <br>
-                                                        <br>
-                                                        What would we catch you singing in the shower?
-                                                        <br>
-                                                        Still Into You – Paramore
-                                                        <br>
-                                                        <br>
-                                                        Who is your favorite musical artist?
-                                                        <br>
-                                                        Taylor Swift
-                                                        <br>
-                                                        <br>
-                                                        What is your favorite quote?
-                                                        <br>
-                                                        “Not everyone can become a great artist, but a great artist can come from anywhere.” – Anton Ego (Ratatouille)
+                                                        Major:<br>{{ member.more-info.major }}<br><br>
+                                                        Hometown:<br>{{ member.more-info.hometown }}<br><br>
+                                                        Interests:<br>{{ member.more-info.interests }}<br><br>
+                                                        Fun Fact:<br>{{ member.more-info.fun-fact }}<br><br>
+                                                        Audition Song:<br>{{ member.more-info.audition-song }}<br><br>
+                                                        What would we catch you singing in the shower?<br>{{ member.more-info.shower-song }}<br><br>
+                                                        Who is your favorite musical artist?<br>{{ member.more-info.musical-artist }}<br><br>
+                                                        What is your favorite quote?<br>{{ member.more-info.quote }}
                                                     </p>
                                                 </div>
                                             </div>
@@ -99,81 +77,15 @@ root: ../
                             </div>
                         </div>
                     </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Chelsea.jpg" class="portrait shadow" style="object-position: 50% 60%;" alt="Chelsea Greene">
-                        </div>
-                        <p class="lead name">Chelsea Greene</p>
-                        <p class="caption">Music Director</p>
-                        <p class="caption"><a class="dark-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Jodie.jpg" class="portrait shadow" alt="Jodie Kiyokawa">
-                        </div>
-                        <p class="lead name">Jodie Kiyokawa</p>
-                        <p class="caption"><a class="dark-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/ClaireR.jpg" class="portrait shadow" style="object-position: 50% 10%;" alt="Claire Renoe">
-                        </div>
-                        <p class="lead name">Claire Renoe</p>
-                        <p class="caption">Birthday Chair</p>
-                        <p class="caption"><a class="dark-link">More</a></p>
-                    </section>
-                </div><!--grid-->
+                    {%- endfor -%}
+                </div>
             </div>
         </div>
-        <div class="content-wrap" style="background-color: rgb(54 52 96);">
-            <div class="container-md" style="text-align: left; color: white;">
-                <h1 style="color: #ffd4dc;">Altos</h1>
-                <div class="row portrait-row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 justify-content-left">
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Joy.png" class="portrait shadow" style="object-position: 50% 60%;" alt="Joy Cheng">
-                        </div>
-                        <p class="lead name">Joy Cheng</p>
-                        <p class="caption">Manager</p>
-                        <p class="caption"><a class="light-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Madeline.png" class="portrait shadow" style="object-position: 50% 100%;" alt="Madeline Ellmore">
-                        </div>
-                        <p class="lead name">Madeline Ellmore</p>
-                        <p class="caption"><a class="light-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Lani.jpg" class="portrait shadow" alt="Lani Jacobson">
-                        </div>
-                        <p class="lead name">Lani Jacobson</p>
-                        <p class="caption">Manager</p>
-                        <p class="caption"><a class="light-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Hinata.jpg" class="portrait shadow" alt="Hinata Nayuki">
-                        </div>
-                        <p class="lead name">Hinata Nayuki</p>
-                        <p class="caption">Chief Financial Officer</p>
-                        <p class="caption"><a class="light-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Khanh.jpg" class="portrait shadow" alt="Khanh Tran">
-                        </div>
-                        <p class="lead name">Khanh Tran</p>
-                        <p class="caption"><a class="light-link">More</a></p>
-                    </section>
-                </div><!--grid-->
-            </div>
-        </div>
+        {%- endfor -%}
         <div class="content-wrap" style="background-color: #ffd4dc;">
             <div class="container-md" style="text-align: left; color: black;">
                 <h1 style="color: rgb(54 52 96);">Tenors</h1>
-                <div class="row portrait-row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 justify-content-left">                    
+                <div class="row portrait-row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 justify-content-left">
                     <section class="col">
                         <div class="portrait-container">
                             <img src="{{root}}assets/photos/members/Joseph.jpg" class="portrait shadow" alt="Joseph Engle">
