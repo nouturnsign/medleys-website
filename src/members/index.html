@@ -35,10 +35,12 @@ root: ../
                     {%- for member in member-info.members -%}
                     <section class="col">
                         <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/{{member.relative-img-src}}" class="portrait shadow" alt={{member.name}}>
+                            <img id="portrait-{{member.slug}}" src="{{root}}assets/photos/members/{{member.relative-img-src}}" class="portrait shadow" alt="{{member.name | escape}}">
                         </div>
                         <p class="lead name">{{ member.name }}</p>
+                        {%- if member.leadership-position != "" -%}
                         <p class="caption">{{ member.leadership-position }}</p>
+                        {%- endif -%}
                         <p class="caption">
                             {%- if member-info.is-light-color -%}
                             <a class="dark-link" data-bs-toggle="modal" data-bs-target="#modal-member-{{member.slug}}">More</a>
@@ -74,7 +76,9 @@ root: ../
                                                         Audition Song:<br>{{ member.audition-song }}<br><br>
                                                         What would we catch you singing in the shower?<br>{{ member.shower-song }}<br><br>
                                                         Who is your favorite musical artist?<br>{{ member.musical-artist }}<br><br>
+                                                        {%- if member.quote != "" -%}
                                                         What is your favorite quote?<br>{{ member.quote }}
+                                                        {%- endif -%}
                                                     </p>
                                                 </div>
                                             </div>

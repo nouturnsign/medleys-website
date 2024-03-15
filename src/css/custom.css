@@ -530,3 +530,19 @@ ol li::before {
     margin-top: 56px;
     margin-bottom: 56px;
 }
+
+#portrait-chelsea-greene {
+    object-position: 50% 60%;
+}
+
+#portrait-claire-renoe {
+    object-position: 50% 10%;
+}
+
+#portrait-joy-cheng {
+    object-position: 50% 60%;
+}
+
+#portrait-steve-chung {
+    object-position: 50% 50%;
+}
