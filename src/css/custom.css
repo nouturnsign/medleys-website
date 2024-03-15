@@ -27,7 +27,7 @@ p {
 :root {
     --color: rgb(54 52 96);
 }
-  
+
 body {
     margin: 0;
     font-family: Poppins;
@@ -258,7 +258,7 @@ a.nav-item.nav-link.active {
     position: relative;
     transform: translateX(-50%);
 }
-  
+
 .col-img-container::after {
     content: "";
     display: block;
@@ -444,7 +444,7 @@ textarea {
     background-image: initial;
     width: 0;
 }
-  
+
 .accordion-button:not(.collapsed)::after {
     background-image: initial;
     width: 0;
@@ -494,7 +494,7 @@ ol li::before {
     margin-bottom: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
-  
+
 .videoWrapper iframe {
     position: absolute;
     top: 0;
@@ -545,4 +545,24 @@ ol li::before {
 
 #portrait-steve-chung {
     object-position: 50% 50%;
+}
+
+#portrait-madeline-ellmore {
+    object-position: 50% 100%;
+}
+
+#portrait-vincent-lin {
+    object-position: 20% 60%;
+}
+
+#portrait-elliot-kang {
+    object-position: 50% 0%;
+}
+
+#portrait-warren-wu {
+    object-position: 50% 0%;
+}
+
+#portrait-david-xu {
+    object-position: 50% 40%;
 }
