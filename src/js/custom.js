@@ -16,9 +16,10 @@ function onYouTubeIframeAPIReady() {
     }
 
     carouselDiv.addEventListener("slid.bs.carousel", (event) => {
-        console.log("DBGINFO", activeIndex);
         players[activeIndex].pauseVideo();
         if (event.direction == "right") activeIndex -= 1;
         else activeIndex += 1;
+        if (activeIndex < 0) activeIndex += players.length;
+        if (activeIndex >= players.length) activeIndex -= players.length;
     });
 }
