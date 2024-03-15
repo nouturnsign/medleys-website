@@ -35,14 +35,18 @@ root: ../
                     {%- for member in member-info.members -%}
                     <section class="col">
                         <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/{{member.img-src}}" class="portrait shadow" alt={{member.name}}>
+                            <img src="{{root}}assets/photos/members/{{member.relative-img-src}}" class="portrait shadow" alt={{member.name}}>
                         </div>
                         <p class="lead name">{{ member.name }}</p>
                         <p class="caption">{{ member.leadership-position }}</p>
                         <p class="caption">
+                            {%- if member-info.is-light-color -%}
                             <a class="dark-link" data-bs-toggle="modal" data-bs-target="#modal-member-{{member.slug}}">More</a>
+                            {%- else -%}
+                            <a class="light-link" data-bs-toggle="modal" data-bs-target="#modal-member-{{member.slug}}">More</a>
+                            {%- endif -%}
                         </p>
-                        <div class="modal modal-lg fade" id="modal-member-{{member.slug}}" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+                        <div class="modal modal-lg fade" id="modal-member-{{member.slug}}" tabindex="-1" role="dialog" style="text-align: left; color: black;" aria-labelledby="modal-label" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -55,19 +59,19 @@ root: ../
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-lg pt-lg-0">
-                                                    <img src="{{root}}assets/photos/members/{{member.img-src}}" class="img-fluid rounded" alt="{{member.name}}">
+                                                    <img src="{{root}}assets/photos/members/{{member.relative-img-src}}" class="img-fluid rounded" alt="{{member.name}}">
                                                 </div>
                                                 <div class="col-lg text-start d-flex flex-column">
-                                                    <p class="fst-italic" style="text-transform:uppercase">{{ member-info.section-label }}</p>
+                                                    <p class="fst-italic" style="text-transform:uppercase">{{ member.section-label }}</p>
                                                     <p>
-                                                        Major:<br>{{ member.more-info.major }}<br><br>
-                                                        Hometown:<br>{{ member.more-info.hometown }}<br><br>
-                                                        Interests:<br>{{ member.more-info.interests }}<br><br>
-                                                        Fun Fact:<br>{{ member.more-info.fun-fact }}<br><br>
-                                                        Audition Song:<br>{{ member.more-info.audition-song }}<br><br>
-                                                        What would we catch you singing in the shower?<br>{{ member.more-info.shower-song }}<br><br>
-                                                        Who is your favorite musical artist?<br>{{ member.more-info.musical-artist }}<br><br>
-                                                        What is your favorite quote?<br>{{ member.more-info.quote }}
+                                                        Major:<br>{{ member.major }}<br><br>
+                                                        Hometown:<br>{{ member.hometown }}<br><br>
+                                                        Interests:<br>{{ member.interests }}<br><br>
+                                                        Fun Fact:<br>{{ member.fun-fact }}<br><br>
+                                                        Audition Song:<br>{{ member.audition-song }}<br><br>
+                                                        What would we catch you singing in the shower?<br>{{ member.shower-song }}<br><br>
+                                                        Who is your favorite musical artist?<br>{{ member.musical-artist }}<br><br>
+                                                        What is your favorite quote?<br>{{ member.quote }}
                                                     </p>
                                                 </div>
                                             </div>
@@ -82,87 +86,3 @@ root: ../
             </div>
         </div>
         {%- endfor -%}
-        <div class="content-wrap" style="background-color: #ffd4dc;">
-            <div class="container-md" style="text-align: left; color: black;">
-                <h1 style="color: rgb(54 52 96);">Tenors</h1>
-                <div class="row portrait-row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 justify-content-left">
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Joseph.jpg" class="portrait shadow" alt="Joseph Engle">
-                        </div>
-                        <p class="lead name">Joseph Engle</p>
-                        <p class="caption">Member Development Chair</p>
-                        <p class="caption"><a class="dark-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Vincent.png" class="portrait shadow" style="object-position: 20% 60%;" alt="Vincent Lin">
-                        </div>
-                        <p class="lead name">Vincent Lin</p>
-                        <p class="caption">Member Development Chair</p>
-                        <p class="caption"><a class="dark-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Jack.jpg" class="portrait shadow" alt="Jack Moore">
-                        </div>
-                        <p class="lead name">Jack Moore</p>
-                        <p class="caption">Music Director</p>
-                        <p class="caption"><a class="dark-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Eric.jpg" class="portrait shadow" alt="Eric Wang">
-                        </div>
-                        <p class="lead name">Eric Wang</p>
-                        <p class="caption"><a class="dark-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Dylan.jpg" class="portrait shadow" alt="Dylan Zou-Schupp">
-                        </div>
-                        <p class="lead name">Dylan Zou-Schupp</p>
-                        <p class="caption"><a class="dark-link">More</a></p>
-                    </section>
-                </div><!--grid-->
-            </div>
-        </div>
-        <div class="content-wrap" style="background-color: rgb(54 52 96);">
-            <div class="container-md" style="text-align: left; color: white;">
-                <h1 style="color: #ffd4dc;">Basses</h1>
-                <div class="row portrait-row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 justify-content-left">
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Steve.jpg" class="portrait shadow" style="object-position: 50% 50%;" alt="Steve Chung">
-                        </div>
-                        <p class="lead name">Steve Chung</p>
-                        <p class="caption">Love Notes Manager</p>
-                        <p class="caption"><a class="light-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Elliot.jpg" class="portrait shadow" style="object-position: 50% 0%;" alt="Elliot Kang">
-                        </div>
-                        <p class="lead name">Elliot Kang</p>
-                        <p class="caption">Director of Community Engagement</p>
-                        <p class="caption"><a class="light-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/Warren.jpg" class="portrait shadow" style="object-position: 50% 0%;" alt="Warren Wu">
-                        </div>
-                        <p class="lead name">Warren Wu</p>
-                        <p class="caption">Member Development Chair</p>
-                        <p class="caption"><a class="light-link">More</a></p>
-                    </section>
-                    <section class="col">
-                        <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/David.jpg" class="portrait shadow" style="object-position: 50% 40%;" alt="David Xu">
-                        </div>
-                        <p class="lead name">David Xu</p>
-                        <p class="caption">Love Notes Manager</p>
-                        <p class="caption"><a class="light-link">More</a></p>
-                    </section>
-                </div><!--grid-->
-            </div>
-        </div>
