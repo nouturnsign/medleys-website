@@ -11,6 +11,7 @@
                 "leadership-position": "Love Notes Manager",
                 "section-label": "SOPRANO",
                 "major": "Computer Science, 2026",
+                "minor": "",
                 "hometown": "Irvine, CA",
                 "interests": "Reading, birdwatching, hiking, baking, and rug tufting",
                 "fun-fact": "I love soup!!!",
@@ -18,6 +19,23 @@
                 "shower-song": "Still Into You – Paramore",
                 "musical-artist": "Taylor Swift",
                 "quote": "“Not everyone can become a great artist, but a great artist can come from anywhere.” – Anton Ego (Ratatouille)"
+            },
+            {
+                "name": "Claire Renoe",
+                "pronouns": "she/her",
+                "slug": "claire-renoe",
+                "relative-img-src": "ClaireR.jpg",
+                "leadership-position": "Birthday Coordinator",
+                "section-label": "SOPRANO",
+                "major": "Theater, 2024",
+                "minor": "Cognitive Science",
+                "hometown": "Berkeley, CA",
+                "interests": "Tennis, theater, shopping at Trader Joe’s",
+                "fun-fact": "Heelys are my favorite mode of transportation.",
+                "audition-song": "Mama Who Bore Me – Spring Awakening",
+                "shower-song": "Love on Top – Beyoncé",
+                "musical-artist": "Janis Joplin or King’s Harvest",
+                "quote": "“What’s Walmart, do they sell like wall stuff?” – Paris Hilton"
             }
         ]
     },
@@ -33,6 +51,7 @@
                 "leadership-position": "Manager & Web Master",
                 "section-label": "ALTO",
                 "major": "Computer Science, 2026",
+                "minor": "",
                 "hometown": "Culver City, CA",
                 "interests": "I love formatting things, solving logic puzzles, and folding origami!",
                 "fun-fact": "I have a Betta fish named Beethoven",
@@ -55,6 +74,7 @@
                 "leadership-position": "Membership Development Chair",
                 "section-label": "TENOR",
                 "major": "Psychology, 2024",
+                "minor": "",
                 "hometown": "Elk Grove, CA",
                 "interests": "Psychology, music, video games, film, and writing!",
                 "fun-fact": "Ikea is my happy place",
@@ -75,17 +95,16 @@
                 "slug": "steve-chung",
                 "relative-img-src": "Steve.jpg",
                 "leadership-position": "Love Notes Manager",
-                "more-info": {
-                    "section-label": "BASS & VP",
-                    "major": "Molecular, Cell, and Developmental Biology, 2027",
-                    "hometown": "Danville, CA",
-                    "interests": "Playing the piano and guitar, dancing, playing tennis, biology, writing poems, and wandering around in Target",
-                    "fun-fact": "I lost an adult tooth and a new one grew (I am a certified shark lol)",
-                    "audition-song": "Fly Me to the Moon by Frank Sinatra",
-                    "shower-song": "Ain’t No Sunshine by Bill Withers",
-                    "musical-artist": "Frank Sinatra",
-                    "quote": "“Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer fear, do not sit home and think about it. Go out and get busy.” – Dale Carnegie"
-                }
+                "section-label": "BASS & VP",
+                "major": "Molecular, Cell, and Developmental Biology, 2027",
+                "minor": "",
+                "hometown": "Danville, CA",
+                "interests": "Playing the piano and guitar, dancing, playing tennis, biology, writing poems, and wandering around in Target",
+                "fun-fact": "I lost an adult tooth and a new one grew (I am a certified shark lol)",
+                "audition-song": "Fly Me to the Moon by Frank Sinatra",
+                "shower-song": "Ain’t No Sunshine by Bill Withers",
+                "musical-artist": "Frank Sinatra",
+                "quote": "“Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer fear, do not sit home and think about it. Go out and get busy.” – Dale Carnegie"
             }
         ]
     }

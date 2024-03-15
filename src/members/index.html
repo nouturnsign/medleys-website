@@ -62,9 +62,12 @@ root: ../
                                                     <img src="{{root}}assets/photos/members/{{member.relative-img-src}}" class="img-fluid rounded" alt="{{member.name}}">
                                                 </div>
                                                 <div class="col-lg text-start d-flex flex-column">
-                                                    <p class="fst-italic" style="text-transform:uppercase">{{ member.section-label }}</p>
+                                                    <p class="fst-italic my-0">{{ member.section-label }}</p>
                                                     <p>
                                                         Major:<br>{{ member.major }}<br><br>
+                                                        {%- if member.minor != "" -%}
+                                                        Minor:<br>{{ member.minor }}<br><br>
+                                                        {%- endif -%}
                                                         Hometown:<br>{{ member.hometown }}<br><br>
                                                         Interests:<br>{{ member.interests }}<br><br>
                                                         Fun Fact:<br>{{ member.fun-fact }}<br><br>
