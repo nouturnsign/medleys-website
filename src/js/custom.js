@@ -1,39 +1,24 @@
 const carouselDiv = document.getElementById("carousel-performances");
-var carouselBootstrap;
-var player1;
-var player2;
-var isCarouselCycling = true;
+var carouselBootstrap = bootstrap.Carousel.getOrCreateInstance(carouselDiv);
 
+// This is the active index of the player and array of players.
+var activeIndex = 0;
+var players = [];
+
+// Initialize players.
 function onYouTubeIframeAPIReady() {
     let iframes = carouselDiv.getElementsByTagName("iframe");
+    let i = 0;
     for (let iframe of iframes) {
-        let player = new YT.Player(iframe.id, {
-            events: {
-                onReady: onPlayerReady,
-                onStateChange: onPlayerStateChange,
-            },
-        });
-        carouselDiv.addEventListener("slid.bs.carousel", (event) => {
-            if (!isCarouselCycling) {
-                player.pauseVideo();
-            }
-        });
+        let player = new YT.Player(iframe.id);
+        players[i] = player;
+        i += 1;
     }
-}
 
-function onPlayerReady() {
-    // do nothing
-}
-
-function onPlayerStateChange(event) {
-    const playerState = event.target.getPlayerState();
-    carouselBootstrap = bootstrap.Carousel.getOrCreateInstance(carouselDiv);
-    if (playerState == 1 || playerState == 3) {
-        // playing or buffering
-        carouselBootstrap.pause();
-        isCarouselCycling = false;
-    } else if (!isCarouselCycling) {
-        carouselBootstrap.cycle();
-        isCarouselCycling = true;
-    }
+    carouselDiv.addEventListener("slid.bs.carousel", (event) => {
+        console.log("DBGINFO", activeIndex);
+        players[activeIndex].pauseVideo();
+        if (event.direction == "right") activeIndex -= 1;
+        else activeIndex += 1;
+    });
 }
