@@ -9,11 +9,9 @@ var carouselPlayers = [];
 // Initialize players.
 function onYouTubeIframeAPIReady() {
     let iframes = carouselDiv.getElementsByTagName("iframe");
-    let i = 0;
     for (let iframe of iframes) {
         let player = new YT.Player(iframe.id);
-        carouselPlayers[i] = player;
-        i += 1;
+        carouselPlayers.push(player);
     }
 
     carouselDiv.addEventListener("slid.bs.carousel", (event) => {
