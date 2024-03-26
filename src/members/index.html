@@ -31,9 +31,9 @@ root: ../
             <div class="container-md" style="text-align: left; color: white;">
                 <h1 style="color: #ffd4dc;">{{ member-info.section }}</h1>
         {%- endif -%}
-                <div class="row portrait-row row-cols-2 row-cols-sm-3 row-cols-lg-5 justify-content-left">
+                <div class="row row-sm-margin portrait-row row-cols-2 row-cols-sm-3 row-cols-lg-5 justify-content-left">
                     {%- for member in member-info.members -%}
-                    <section class="col">
+                    <section class="col col-sm-margin">
                         <div class="portrait-container">
                             <img src="{{root}}assets/photos/members/{{member.relative-img-src}}" class="portrait portrait-{{member.slug}} shadow" alt="{{member.caption-heading | escape}}">
                         </div>
@@ -61,8 +61,8 @@ root: ../
                                         </button>
                                     </div>
                                     <div class="modal-body dark-modal-body">
-                                        <div class="row row-cols-1 row-cols-lg-2">
-                                            <div class="col">
+                                        <div class="row row-lg-margin row-cols-1 row-cols-lg-2">
+                                            <div class="col col-lg-margin">
                                                 <div class="portrait-container modal-portrait">
                                                     <img class="portrait-{{member.slug}} portrait shadow" src="{{root}}assets/photos/members/{{member.relative-img-src}}" alt="{{member.caption-heading | escape}}">
                                                 </div>
@@ -77,7 +77,7 @@ root: ../
                                                     {%- endif -%}
                                                 </div>
                                             </div>
-                                            <div class="col text-start">
+                                            <div class="col col-lg-margin text-start">
                                                 <h4 class="dark-modal-heading" style="margin-top: 0;">Class</h3>
                                                 <p class="caption">{{ member.class }}</p>
                                                 <h4 class="dark-modal-heading">Major</h3>
@@ -121,8 +121,8 @@ root: ../
                                         </button>
                                     </div>
                                     <div class="modal-body light-modal-body">
-                                        <div class="row row-cols-1 row-cols-lg-2">
-                                            <div class="col">
+                                        <div class="row row-lg-margin row-cols-1 row-cols-lg-2">
+                                            <div class="col col-lg-margin">
                                                 <div class="portrait-container modal-portrait">
                                                     <img class="portrait-{{member.slug}} portrait shadow" src="{{root}}assets/photos/members/{{member.relative-img-src}}" alt="{{member.caption-heading | escape}}">
                                                 </div>
@@ -137,7 +137,7 @@ root: ../
                                                     {%- endif -%}
                                                 </div>
                                             </div>
-                                            <div class="col text-start">
+                                            <div class="col col-lg-margin text-start">
                                                 <h4 class="light-modal-heading" style="margin-top: 0;">Class</h3>
                                                 <p class="caption">{{ member.class }}</p>
                                                 <h4 class="light-modal-heading">Major</h3>
