@@ -53,8 +53,10 @@ root: ../
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h1 class="modal-title">{{ member.name }}</h1>
-                                        <button type="button" class="btn btn-outline-custom close" data-bs-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
+                                        <button type="button" class="btn close" data-bs-dismiss="modal" aria-label="Close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                            </svg>
                                         </button>
                                     </div>
                                     <div class="modal-body">
@@ -65,39 +67,39 @@ root: ../
                                                         <img class="portrait-{{member.slug}} portrait shadow" src="{{root}}assets/photos/members/{{member.relative-img-src}}" alt="{{member.caption-heading | escape}}">
                                                     </div>
                                                     <div class="text-start">
-                                                        <h2 class="caption-heading">Pronouns</h2>
+                                                        <h2 class="modal-heading">Pronouns</h2>
                                                         <p class="lead caption">{{ member.pronouns }}</p>
-                                                        <h2 class="caption-heading">Voice Part</h2>
+                                                        <h2 class="modal-heading">Voice Part</h2>
                                                         <p class="lead caption">{{ member.section-label }}</p>
                                                         {%- if member.leadership-position != "" -%}
-                                                        <h2 class="caption-heading">Leadership Position</h2>
+                                                        <h2 class="modal-heading">Leadership Position</h2>
                                                         <p class="lead caption">{{ member.leadership-position }}</p>
                                                         {%- endif -%}
                                                     </div>
                                                 </div>
                                                 <div class="col text-start">
-                                                    <h3 class="caption-heading" style="margin-top: 0;">Class</h2>
+                                                    <h3 class="modal-heading" style="margin-top: 0;">Class</h2>
                                                     <p class="caption">{{ member.class }}</p>
-                                                    <h3 class="caption-heading">Major</h2>
+                                                    <h3 class="modal-heading">Major</h2>
                                                     <p class="caption">{{ member.major }}</p>
                                                     {%- if member.minor != "" -%}
-                                                    <h3 class="caption-heading">Minor</h2>
+                                                    <h3 class="modal-heading">Minor</h2>
                                                     <p class="caption">{{ member.minor }}</p>
                                                     {%- endif -%}
-                                                    <h3 class="caption-heading">Hometown</h2>
+                                                    <h3 class="modal-heading">Hometown</h2>
                                                     <p class="caption">{{ member.hometown }}</p>
-                                                    <h3 class="caption-heading">Interests/Hobbies</h2>
+                                                    <h3 class="modal-heading">Interests/Hobbies</h2>
                                                     <p class="caption">{{ member.interests }}</p>
-                                                    <h3 class="caption-heading">Fun Fact</h2>
+                                                    <h3 class="modal-heading">Fun Fact</h2>
                                                     <p class="caption">{{ member.fun-fact }}</p>
-                                                    <h3 class="caption-heading">Audition Song</h2>
+                                                    <h3 class="modal-heading">Audition Song</h2>
                                                     <p class="caption">{{ member.audition-song }}</p>
-                                                    <h3 class="caption-heading">What would we catch you singing in the shower?</h2>
+                                                    <h3 class="modal-heading">Go-To Shower Song</h2>
                                                     <p class="caption">{{ member.shower-song }}</p>
-                                                    <h3 class="caption-heading">Who is your favorite musical artist?</h2>
+                                                    <h3 class="modal-heading">Favorite Musical Artist</h2>
                                                     <p class="caption">{{ member.musical-artist }}</p>
                                                     {%- if member.quote != "" -%}
-                                                    <h3 class="caption-heading">What is your favorite quote?</h2>
+                                                    <h3 class="modal-heading">Favorite Quote</h2>
                                                     <p class="caption">{{ member.quote }}</p>
                                                     {%- endif -%}
                                                 </div>
