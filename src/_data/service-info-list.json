@@ -76,13 +76,13 @@
         "organization": "Los Angeles Mission",
         "is-current": true,
         "slug": "la-mission",
-        "description": "Every year, we host a clothing drive during our holiday concert and collect clothing donations for the Los Angeles Mission.",
+        "description": "Every year, we host a clothing drive during our holiday concert and collect clothing donations for Los Angeles Mission.",
         "images": [
             "la-mission.jpg"
         ],
         "links": [
             {
-                "text": "Learn more about the Los Angeles Mission",
+                "text": "Learn more about Los Angeles Mission",
                 "url": "https://losangelesmission.org/"
             }
         ]
