@@ -35,7 +35,7 @@ root: ../
                     {%- for member in member-info.members -%}
                     <section class="col col-sm-margin">
                         <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/{{member.relative-img-src}}" class="portrait portrait-{{member.slug}} shadow" alt="{{member.caption-heading | escape}}">
+                            <img src="{{root}}assets/photos/members/{{member.relative-img-src}}" class="portrait portrait-{{member.slug}} shadow" alt="{{member.name | escape}}">
                         </div>
                         <p class="lead caption-heading">{{ member.name }}</p>
                         {%- if member.leadership-position != "" -%}
@@ -64,7 +64,7 @@ root: ../
                                         <div class="row row-lg-margin row-cols-1 row-cols-lg-2">
                                             <div class="col col-lg-margin">
                                                 <div class="portrait-container modal-portrait">
-                                                    <img class="portrait-{{member.slug}} portrait shadow" src="{{root}}assets/photos/members/{{member.relative-img-src}}" alt="{{member.caption-heading | escape}}">
+                                                    <img class="portrait-{{member.slug}} portrait shadow" src="{{root}}assets/photos/members/{{member.relative-img-src}}" alt="{{member.name | escape}}">
                                                 </div>
                                                 <div class="text-start">
                                                     <h3 class="dark-modal-heading">Pronouns</h3>
@@ -124,7 +124,7 @@ root: ../
                                         <div class="row row-lg-margin row-cols-1 row-cols-lg-2">
                                             <div class="col col-lg-margin">
                                                 <div class="portrait-container modal-portrait">
-                                                    <img class="portrait-{{member.slug}} portrait shadow" src="{{root}}assets/photos/members/{{member.relative-img-src}}" alt="{{member.caption-heading | escape}}">
+                                                    <img class="portrait-{{member.slug}} portrait shadow" src="{{root}}assets/photos/members/{{member.relative-img-src}}" alt="{{member.name | escape}}">
                                                 </div>
                                                 <div class="text-start">
                                                     <h3 class="light-modal-heading">Pronouns</h3>

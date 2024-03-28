@@ -24,6 +24,64 @@ root: ../
         <div class="content-wrap" style="background-color: rgb(54 52 96);">
             <div class="container-md" style="text-align: left; color: white;">
                 <h1 style="color: #ffd4dc;">Love for People, Love for Music</h1>
-                <p class="lead" style="color: white;">Medleys is committed to spreading care, love, and joy through the healing power of music to those who need it most.</p>
+                <p class="lead" style="color: white;">Medleys is committed to spreading care, love, and joy through the healing power of music to those who need it most. Below are some of the ways in which we have served Los Angeles communities.</p>
+            </div>
+        </div>
+        <div class="content-wrap" style="background-color: var(--medleys-pink)">
+            <div class="container-md" style="text-align: left; color: white;">
+                <h1 style="color: var(--medleys-blue); margin-bottom: 0;">Current Partnerships and Recent Events</h1>
+                <div class="row row-sm-margin" data-masonry='{"percentPosition": true }'>
+                    {%- for service in service-info-list-%}
+                    {%- if service.is-current -%}
+                    <div class="col col-sm-margin col-xs-12 col-sm-6 col-lg-4">
+                        <div class="card shadow">
+                            <div class="card-header" style="background-color: var(--medleys-blue);">
+                                <h3 style="color: var(--medleys-pink)">{{ service.organization }}</h3>
+                            </div>
+                            {%- if service.images.size > 1 -%}
+                            <div id="carousel-service-{{service.slug}}" class="carousel slide" style="margin: 0" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    {%- for image in service.images -%}
+                                    {%- if image == service.images.first -%}
+                                    <div class="carousel-item active">
+                                    {%- else -%}
+                                    <div class="carousel-item">
+                                    {%- endif -%}
+                                        <div class="col-img-container">
+                                            <img src="{{root}}assets/photos/service/{{image}}" class="col-img" alt="{{service.name}}">
+                                        </div>
+                                    </div>
+                                    {%- endfor -%}
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-service-{{service.slug}}" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" style="margin: 20px;" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-service-{{service.slug}}" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" style="margin: 20px;" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            {%- else -%}
+                            <div class="col-img-container">
+                                <img src="{{root}}assets/photos/service/{{service.images.first}}" class="col-img" alt="{{service.name}}">
+                            </div>
+                            {%- endif -%}
+                            <div class="card-body">
+                                <p>{{ service.description }}</p>
+                                {%- for link in service.links -%}
+                                <p><a href="{{link.url}}" target="blank" class="gray-link">{{ link.text }}</a></p>
+                                {%- endfor -%}
+                            </div>
+                        </div>
+                    </div>
+                    {%- endif -%}
+                    {%- endfor -%}
+                </div>
+            </div>
+        </div>
+        <div class="content-wrap" style="background-color: var(--medleys-blue)">
+            <div class="container-md" style="text-align: left; color: white;">
+                <h1 style="color: var(--medleys-pink);">Past Events</h1>
             </div>
         </div>
