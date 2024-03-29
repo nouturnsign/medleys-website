@@ -86,5 +86,58 @@
                 "url": "https://losangelesmission.org/"
             }
         ]
+    },
+    {
+        "organization": "Pediatric AIDS Coalition",
+        "is-current": false,
+        "slug": "pediatric-aids-coalition",
+        "description": "We performed virtually for Dance Marathon at UCLA in 2020 to support the Pediatric AIDS Coalition's mission to fundraise for and raise awareness about the fight against AIDS in children.",
+        "images": [
+            "pediatric-aids-coalition-1.png",
+            "pediatric-aids-coalition-2.png"
+        ],
+        "links": [
+            {
+                "text": "Learn more about the Pediatric AIDS Coalition",
+                "url": "https://pediatricaidscoalition.org/"
+            },
+            {
+                "text": "Watch Dance Marathon 2020",
+                "url": "https://www.youtube.com/watch?v=6nSl4-zXSRo"
+            }
+        ]
+    },
+    {
+        "organization": "Providence Saint John's Health Center",
+        "is-current": false,
+        "slug": "saint-johns",
+        "description": "We were honored to sing for the incredibly strong patients and hardworking staff at Providence Saint John's Health Center in Santa Monica.",
+        "images": [
+            "saint-johns-1.jpg",
+            "saint-johns-2.jpg",
+            "saint-johns-3.jpg"
+        ],
+        "links": [
+            {
+                "text": "Learn more about Saint John's Health Center Foundation",
+                "url": "https://saintjohnsfoundation.org/"
+            }
+        ]
+    },
+    {
+        "organization": "Mother's Day at the Downtown Women's Center",
+        "is-current": false,
+        "slug": "mothers-day",
+        "description": "For Mother's Day, we had the privilege of singing to the inspiring women at the Downtown Women's Center.",
+        "images": [
+            "mothers-day-1.png",
+            "mothers-day-2.jpg"
+        ],
+        "links": [
+            {
+                "text": "Learn more about the Downtown Women's Center",
+                "url": "https://downtownwomenscenter.org/"
+            }
+        ]
     }
 ]
