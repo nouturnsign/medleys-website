@@ -18,18 +18,18 @@ root: ../
         </nav>
         <div class="jumbotron jumbotron-fluid" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('{{root}}assets/photos/members.jpg'); background-position: 50% 90%;">
             <div class="container">
-                <h1 class="display-title" style="color: white;">Members</h1>
+                <h1 class="display-title">Members</h1>
             </div>
         </div>
         {%- for member-info in member-info-list -%}
         {%- if member-info.is-light-color -%}
-        <div class="content-wrap" style="background-color: #ffd4dc;">
+        <div class="content-wrap" style="background-color: var(--medleys-pink);">
             <div class="container-md" style="text-align: left; color: black;">
-                <h1 style="color: rgb(54 52 96);">{{ member-info.section }}</h1>
+                <h1 style="color: var(--medleys-blue);">{{ member-info.section }}</h1>
         {%- else -%}
-        <div class="content-wrap" style="background-color: rgb(54 52 96);">
+        <div class="content-wrap" style="background-color: var(--medleys-blue);">
             <div class="container-md" style="text-align: left; color: white;">
-                <h1 style="color: #ffd4dc;">{{ member-info.section }}</h1>
+                <h1 style="color: var(--medleys-pink);">{{ member-info.section }}</h1>
         {%- endif -%}
                 <div class="row row-sm-margin portrait-row row-cols-2 row-cols-sm-3 row-cols-lg-5 justify-content-left">
                     {%- for member in member-info.members -%}
