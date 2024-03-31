@@ -182,7 +182,7 @@ root: ../
         {%- endfor -%}
         <div class="content-wrap" style="background-color: var(--medleys-pink);">
             <div class="container-md" style="text-align: left; color: black;">
-                <h1 style="color: var(--medleys-blue);">Alumni</h1>
+                <h1 style="color: var(--medleys-blue); margin-bottom: 0;">Alumni</h1>
                 <div class="row row-sm-margin row-cols-2 row-cols-sm-3 row-cols-lg-5" data-masonry='{"percentPosition": true }'>
                     {%- assign alumni_by_name = alumni-list | sort: "name" -%}
                     {%- for alum in alumni_by_name -%}
