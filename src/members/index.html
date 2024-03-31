@@ -183,11 +183,19 @@ root: ../
         <div class="content-wrap" style="background-color: var(--medleys-pink);">
             <div class="container-md" style="text-align: left; color: black;">
                 <h1 style="color: var(--medleys-blue);">Alumni</h1>
-                {%- assign alumni_by_name = alumni-list | sort: "name" -%}
-                <p class="lead" style="color: black;">
-                {%- for alum in alumni_by_name -%}
-                {{ alum.name }} {% if alum.voice-part != "" -%} ({{ alum.voice-part }}) {%- endif -%}<br>
-                {%- endfor -%}
+                <div class="row row-sm-margin row-cols-2 row-cols-sm-3 row-cols-lg-5" data-masonry='{"percentPosition": true }'>
+                    {%- assign alumni_by_name = alumni-list | sort: "name" -%}
+                    {%- for alum in alumni_by_name -%}
+                    <div class="col col-sm-margin">
+                        {% if alum.voice-part != "" -%}
+                        <p class="lead" style="color: black; margin: 0;">{{ alum.name }}</p>
+                        <p style="color: black; margin: 0;">{{ alum.voice-part }}</p>
+                        {%- else -%}
+                        <p class="lead" style="color: black; margin: 0;">{{ alum.name }}</p>
+                        {%- endif -%}
+                    </div>
+                    {%- endfor -%}
+                </div>
                 </p>
             </div>
         </div>
