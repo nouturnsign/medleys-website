@@ -1,0 +1,402 @@
+[
+    {
+        "name": "Virginia Liu",
+        "year-joined": "2003",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Nathan Waxer",
+        "year-joined": "2004",
+        "voice-part": "Baritone"
+    },
+    {
+        "name": "Theresa Nguyen",
+        "year-joined": "2004",
+        "voice-part": "Mezzo-Soprano"
+    },
+    {
+        "name": "Anna Nabel",
+        "year-joined": "2005",
+        "voice-part": "Soprano"
+    },
+    {
+        "name": "Bryan West",
+        "year-joined": "2005",
+        "voice-part": "Baritenor and Vocal Percussionist"
+    },
+    {
+        "name": "Melanie Wong",
+        "year-joined": "2005",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Sarah Morgan",
+        "year-joined": "2005",
+        "voice-part": "Soprano"
+    },
+    {
+        "name": "Steven Sauk",
+        "year-joined": "2005",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Yvonne Hoang",
+        "year-joined": "2005",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Christopher Remmel",
+        "year-joined": "2006",
+        "voice-part": "Bass"
+    },
+    {
+        "name": "Elise Caves",
+        "year-joined": "2006",
+        "voice-part": "Mezzo-Soprano"
+    },
+    {
+        "name": "Ryan Courtin",
+        "year-joined": "2006",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Rina Agee",
+        "year-joined": "2007",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Steve Greene",
+        "year-joined": "2007",
+        "voice-part": "Bass"
+    },
+    {
+        "name": "Daniel Wu",
+        "year-joined": "2008",
+        "voice-part": "Bass"
+    },
+    {
+        "name": "Jeff Wang",
+        "year-joined": "2008",
+        "voice-part": "Baritone and Vocal Percussionist"
+    },
+    {
+        "name": "Jooeun Lee",
+        "year-joined": "2008",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Sara Ketcham",
+        "year-joined": "2008",
+        "voice-part": "Soprano and Alto"
+    },
+    {
+        "name": "Utkarsh Misra",
+        "year-joined": "2008",
+        "voice-part": ""
+    },
+    {
+        "name": "Kelly Tran",
+        "year-joined": "2009",
+        "voice-part": "Mezzo-Soprano and Alto"
+    },
+    {
+        "name": "Kelly Osajima",
+        "year-joined": "2009",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Nathan Kersey-Wilson",
+        "year-joined": "2009",
+        "voice-part": "Tenor and Vocal Percussionist"
+    },
+    {
+        "name": "Tiffany Yanase",
+        "year-joined": "2009",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Alex Browne",
+        "year-joined": "2010",
+        "voice-part": ""
+    },
+    {
+        "name": "David-Christopher Harris",
+        "year-joined": "2010",
+        "voice-part": "Bass and Vocal Percussionist"
+    },
+    {
+        "name": "Karen Fukuhara",
+        "year-joined": "2010",
+        "voice-part": "Soprano and Alto"
+    },
+    {
+        "name": "Katya Schoenberg",
+        "year-joined": "2010",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Moses Sumney",
+        "year-joined": "2010",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Roxana Meyers",
+        "year-joined": "2010",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Suzanna Papazyan",
+        "year-joined": "2010",
+        "voice-part": "Soprano"
+    },
+    {
+        "name": "Terrence Jegaraj",
+        "year-joined": "2010",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Amit Pandya",
+        "year-joined": "2011",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Nick Dale",
+        "year-joined": "2011",
+        "voice-part": "Baritone and Vocal Percussionist"
+    },
+    {
+        "name": "Nina Kasuya",
+        "year-joined": "2011",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Paul DiLoreto",
+        "year-joined": "2011",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Sam Wang",
+        "year-joined": "2011",
+        "voice-part": "Bass"
+    },
+    {
+        "name": "Sarah Remley",
+        "year-joined": "2011",
+        "voice-part": "Soprano"
+    },
+    {
+        "name": "Aaron Fish",
+        "year-joined": "2012",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Bret Noel",
+        "year-joined": "2012",
+        "voice-part": ""
+    },
+    {
+        "name": "Elena Loper",
+        "year-joined": "2012",
+        "voice-part": "Soprano"
+    },
+    {
+        "name": "Benjamin Chan",
+        "year-joined": "2013",
+        "voice-part": "Bass"
+    },
+    {
+        "name": "Ellen Lawrence",
+        "year-joined": "2013",
+        "voice-part": "Soprano"
+    },
+    {
+        "name": "Kera Kwan",
+        "year-joined": "2013",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Nicole Williams",
+        "year-joined": "2013",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Samantha Duffy",
+        "year-joined": "2013",
+        "voice-part": "Soprano"
+    },
+    {
+        "name": "Bryan Lee",
+        "year-joined": "2014",
+        "voice-part": "Bass and Vocal Percussionist"
+    },
+    {
+        "name": "Desiree Guerrero",
+        "year-joined": "2014",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Josh Briggs",
+        "year-joined": "2014",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Rohan Luhar",
+        "year-joined": "2014",
+        "voice-part": "Tenor and Baritone"
+    },
+    {
+        "name": "Lydia Kirillova",
+        "year-joined": "2014",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Priyanka Pullarkat",
+        "year-joined": "2014",
+        "voice-part": "Soprano"
+    },
+    {
+        "name": "Brendon Daugherty",
+        "year-joined": "2015",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Cole Tsang",
+        "year-joined": "2015",
+        "voice-part": "Baritone"
+    },
+    {
+        "name": "Mackenzie Dimler",
+        "year-joined": "2015",
+        "voice-part": "Bass"
+    },
+    {
+        "name": "Michael Sekerak",
+        "year-joined": "2015",
+        "voice-part": "Tenor and Baritone"
+    },
+    {
+        "name": "Austin Lee",
+        "year-joined": "2015",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Julia Simons",
+        "year-joined": "2016",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Michaela Protenic",
+        "year-joined": "2016",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Nilesh Gupta",
+        "year-joined": "2017",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Justin Chu",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Paige Crane",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Brian Jung",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Grace Kim",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Oliver Lee",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Yakout Mezgueldi",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Aniket Mutatkar",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Aalok Shah",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Skylar Sjöberg",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Alex Wolffe",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Zack Zeoli",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Katia Manner",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Sophia Rodriguez",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Brandon Hatch",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Logan Bautista",
+        "year-joined": "",
+        "voice-part": ""
+    },
+    {
+        "name": "Austin Ho",
+        "year-joined": "",
+        "voice-part": "Tenor"
+    },
+    {
+        "name": "Trevor Gomez",
+        "year-joined": "",
+        "voice-part": "Bass and Vocal Percussionist"
+    },
+    {
+        "name": "Deena Doan",
+        "year-joined": "",
+        "voice-part": "Alto"
+    },
+    {
+        "name": "Preyasi Kumar",
+        "year-joined": "",
+        "voice-part": "Soprano"
+    },
+    {
+        "name": "Nivram Castro",
+        "year-joined": "",
+        "voice-part": "Bass and Vocal Percussionist"
+    },
+    {
+        "name": "Kayla Phan",
+        "year-joined": "",
+        "voice-part": "Alto"
+    }
+]
