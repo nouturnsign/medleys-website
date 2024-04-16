@@ -322,7 +322,7 @@
     {
         "name": "Yakout Mezgueldi",
         "year-joined": "",
-        "voice-part": ""
+        "voice-part": "Alto"
     },
     {
         "name": "Aniket Mutatkar",
@@ -342,32 +342,32 @@
     {
         "name": "Alex Wolffe",
         "year-joined": "",
-        "voice-part": ""
+        "voice-part": "Tenor"
     },
     {
         "name": "Zack Zeoli",
         "year-joined": "",
-        "voice-part": ""
+        "voice-part": "Bass and Vocal Percussionist"
     },
     {
         "name": "Katia Manner",
-        "year-joined": "",
-        "voice-part": ""
+        "year-joined": "2018",
+        "voice-part": "Soprano"
     },
     {
         "name": "Sophia Rodriguez",
-        "year-joined": "",
-        "voice-part": ""
+        "year-joined": "2018",
+        "voice-part": "Alto"
     },
     {
         "name": "Brandon Hatch",
-        "year-joined": "",
-        "voice-part": ""
+        "year-joined": "2021",
+        "voice-part": "Bass"
     },
     {
         "name": "Logan Bautista",
-        "year-joined": "",
-        "voice-part": ""
+        "year-joined": "2021",
+        "voice-part": "Tenor"
     },
     {
         "name": "Austin Ho",
@@ -376,27 +376,27 @@
     },
     {
         "name": "Trevor Gomez",
-        "year-joined": "",
+        "year-joined": "2018",
         "voice-part": "Bass and Vocal Percussionist"
     },
     {
         "name": "Deena Doan",
-        "year-joined": "",
+        "year-joined": "2019",
         "voice-part": "Alto"
     },
     {
         "name": "Preyasi Kumar",
-        "year-joined": "",
+        "year-joined": "2019",
         "voice-part": "Soprano"
     },
     {
         "name": "Nivram Castro",
-        "year-joined": "",
+        "year-joined": "2019",
         "voice-part": "Bass and Vocal Percussionist"
     },
     {
         "name": "Kayla Phan",
-        "year-joined": "",
+        "year-joined": "2020",
         "voice-part": "Alto"
     }
 ]
