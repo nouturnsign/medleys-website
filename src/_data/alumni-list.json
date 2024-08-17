@@ -22,7 +22,7 @@
     {
         "name": "Bryan West",
         "year-joined": "2005",
-        "voice-part": "Baritenor and Vocal Percussionist"
+        "voice-part": "Baritenor, Vocal Percussionist"
     },
     {
         "name": "Melanie Wong",
@@ -77,7 +77,7 @@
     {
         "name": "Jeff Wang",
         "year-joined": "2008",
-        "voice-part": "Baritone and Vocal Percussionist"
+        "voice-part": "Baritone, Vocal Percussionist"
     },
     {
         "name": "Jooeun Lee",
@@ -87,17 +87,16 @@
     {
         "name": "Sara Ketcham",
         "year-joined": "2008",
-        "voice-part": "Soprano and Alto"
+        "voice-part": "Soprano, Alto"
     },
     {
         "name": "Utkarsh Misra",
-        "year-joined": "2008",
-        "voice-part": ""
+        "year-joined": "2008"
     },
     {
         "name": "Kelly Tran",
         "year-joined": "2009",
-        "voice-part": "Mezzo-Soprano and Alto"
+        "voice-part": "Mezzo-Soprano, Alto"
     },
     {
         "name": "Kelly Osajima",
@@ -107,7 +106,7 @@
     {
         "name": "Nathan Kersey-Wilson",
         "year-joined": "2009",
-        "voice-part": "Tenor and Vocal Percussionist"
+        "voice-part": "Tenor, Vocal Percussionist"
     },
     {
         "name": "Tiffany Yanase",
@@ -116,18 +115,17 @@
     },
     {
         "name": "Alex Browne",
-        "year-joined": "2010",
-        "voice-part": ""
+        "year-joined": "2010"
     },
     {
         "name": "David-Christopher Harris",
         "year-joined": "2010",
-        "voice-part": "Bass and Vocal Percussionist"
+        "voice-part": "Bass, Vocal Percussionist"
     },
     {
         "name": "Karen Fukuhara",
         "year-joined": "2010",
-        "voice-part": "Soprano and Alto"
+        "voice-part": "Soprano, Alto"
     },
     {
         "name": "Katya Schoenberg",
@@ -162,7 +160,7 @@
     {
         "name": "Nick Dale",
         "year-joined": "2011",
-        "voice-part": "Baritone and Vocal Percussionist"
+        "voice-part": "Baritone, Vocal Percussionist"
     },
     {
         "name": "Nina Kasuya",
@@ -191,8 +189,7 @@
     },
     {
         "name": "Bret Noel",
-        "year-joined": "2012",
-        "voice-part": ""
+        "year-joined": "2012"
     },
     {
         "name": "Elena Loper",
@@ -227,7 +224,7 @@
     {
         "name": "Bryan Lee",
         "year-joined": "2014",
-        "voice-part": "Bass and Vocal Percussionist"
+        "voice-part": "Bass, Vocal Percussionist"
     },
     {
         "name": "Desiree Guerrero",
@@ -242,7 +239,7 @@
     {
         "name": "Rohan Luhar",
         "year-joined": "2014",
-        "voice-part": "Tenor and Baritone"
+        "voice-part": "Tenor, Baritone"
     },
     {
         "name": "Lydia Kirillova",
@@ -272,7 +269,7 @@
     {
         "name": "Michael Sekerak",
         "year-joined": "2015",
-        "voice-part": "Tenor and Baritone"
+        "voice-part": "Tenor, Baritone"
     },
     {
         "name": "Austin Lee",
@@ -295,59 +292,40 @@
         "voice-part": "Tenor"
     },
     {
-        "name": "Justin Chu",
-        "year-joined": "",
-        "voice-part": ""
+        "name": "Justin Chu"
     },
     {
-        "name": "Paige Crane",
-        "year-joined": "",
-        "voice-part": ""
+        "name": "Paige Crane"
     },
     {
-        "name": "Brian Jung",
-        "year-joined": "",
-        "voice-part": ""
+        "name": "Brian Jung"
     },
     {
-        "name": "Grace Kim",
-        "year-joined": "",
-        "voice-part": ""
+        "name": "Grace Kim"
     },
     {
-        "name": "Oliver Lee",
-        "year-joined": "",
-        "voice-part": ""
+        "name": "Oliver Lee"
     },
     {
         "name": "Yakout Mezgueldi",
-        "year-joined": "",
         "voice-part": "Alto"
     },
     {
-        "name": "Aniket Mutatkar",
-        "year-joined": "",
-        "voice-part": ""
+        "name": "Aniket Mutatkar"
     },
     {
-        "name": "Aalok Shah",
-        "year-joined": "",
-        "voice-part": ""
+        "name": "Aalok Shah"
     },
     {
-        "name": "Skylar Sjöberg",
-        "year-joined": "",
-        "voice-part": ""
+        "name": "Skylar Sjöberg"
     },
     {
         "name": "Alex Wolffe",
-        "year-joined": "",
         "voice-part": "Tenor"
     },
     {
         "name": "Zack Zeoli",
-        "year-joined": "",
-        "voice-part": "Bass and Vocal Percussionist"
+        "voice-part": "Bass, Vocal Percussionist"
     },
     {
         "name": "Katia Manner",
@@ -371,13 +349,12 @@
     },
     {
         "name": "Austin Ho",
-        "year-joined": "",
         "voice-part": "Tenor"
     },
     {
         "name": "Trevor Gomez",
         "year-joined": "2018",
-        "voice-part": "Bass and Vocal Percussionist"
+        "voice-part": "Bass, Vocal Percussionist"
     },
     {
         "name": "Deena Doan",
@@ -392,7 +369,7 @@
     {
         "name": "Nivram Castro",
         "year-joined": "2019",
-        "voice-part": "Bass and Vocal Percussionist"
+        "voice-part": "Bass, Vocal Percussionist"
     },
     {
         "name": "Kayla Phan",

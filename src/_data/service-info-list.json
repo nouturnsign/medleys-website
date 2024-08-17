@@ -4,10 +4,12 @@
         "is-current": true,
         "slug": "downtown-womens-center",
         "description": "Every year during the week of Valentine's Day, we raise money for the Downtown Women's Center through our Love Notes fundraiser during which we offer live and virtual serenades. This year, we delivered over 100 Love Notes and raised almost $2,000! We had the privilege of celebrating the success of Love Notes by singing for the incredible women at the Downtown Women's Center.",
-        "images": [
+        "images":
+        [
             "downtown-womens-center.jpg"
         ],
-        "links": [
+        "links":
+        [
             {
                 "text": "Learn more about the Downtown Women's Center",
                 "url": "https://downtownwomenscenter.org/"
@@ -19,11 +21,13 @@
         "is-current": true,
         "slug": "reading-to-kids",
         "description": "For the March \"Music and Entertainment\"-themed reading club, we performed for the brilliant students at MacArthur Park Elementary School. We also expanded our volunteer experience beyond singing by reading to the students with the passionate volunteers at Reading to Kids.",
-        "images": [
+        "images":
+        [
             "reading-to-kids-1.jpg",
             "reading-to-kids-2.jpg"
         ],
-        "links": [
+        "links":
+        [
             {
                 "text": "Learn more about Reading to Kids",
                 "url": "https://readingtokids.org/main/main.php"
@@ -35,12 +39,14 @@
         "is-current": true,
         "slug": "people-animal-connection",
         "description": "This year, we had the honor of caroling for the amazing patients and dedicated staff at Ronald Reagan UCLA Medical Center alongside UCLA People-Animal Connection's talented dogs and wonderful team. We sang some classic Christmas and Hanukkah carols for the December holidays and some of our Love Notes songs for Valentine's Day.",
-        "images": [
+        "images":
+        [
             "people-animal-connection-1.jpg",
             "people-animal-connection-2.jpg",
             "people-animal-connection-3.jpg"
         ],
-        "links": [
+        "links":
+        [
             {
                 "text": "Learn more about UCLA People-Animal Connection",
                 "url": "https://www.uclahealth.org/programs/pac"
@@ -56,12 +62,14 @@
         "is-current": true,
         "slug": "habitat-for-humanity",
         "description": "We competed in UCLA Bruin Belles Service Association's first-ever charity dodgeball tournament—the BelleBall Tournament—and won! As the winners, we had the honor of donating $1,000 to a charity of our choice. We chose Habitat for Humanity as the charity to receive the donation.",
-        "images": [
+        "images":
+        [
             "habitat-for-humanity-1.jpg",
             "habitat-for-humanity-2.jpg",
             "habitat-for-humanity-3.jpg"
         ],
-        "links": [
+        "links":
+        [
             {
                 "text": "Learn more about Habitat for Humanity",
                 "url": "https://www.habitat.org/"
@@ -77,10 +85,12 @@
         "is-current": true,
         "slug": "la-mission",
         "description": "Every year, we host a clothing drive during our holiday concert and collect clothing donations for Los Angeles Mission.",
-        "images": [
+        "images":
+        [
             "la-mission.jpg"
         ],
-        "links": [
+        "links":
+        [
             {
                 "text": "Learn more about Los Angeles Mission",
                 "url": "https://losangelesmission.org/"
@@ -92,11 +102,13 @@
         "is-current": false,
         "slug": "pediatric-aids-coalition",
         "description": "We performed virtually for Dance Marathon at UCLA in 2020 to support the Pediatric AIDS Coalition's mission to fundraise for and raise awareness about the fight against AIDS in children.",
-        "images": [
+        "images":
+        [
             "pediatric-aids-coalition-1.png",
             "pediatric-aids-coalition-2.png"
         ],
-        "links": [
+        "links":
+        [
             {
                 "text": "Learn more about the Pediatric AIDS Coalition",
                 "url": "https://pediatricaidscoalition.org/"
@@ -112,12 +124,14 @@
         "is-current": false,
         "slug": "saint-johns",
         "description": "We were honored to sing for the incredibly strong patients and hardworking staff at Providence Saint John's Health Center in Santa Monica.",
-        "images": [
+        "images":
+        [
             "saint-johns-1.jpg",
             "saint-johns-2.jpg",
             "saint-johns-3.jpg"
         ],
-        "links": [
+        "links":
+        [
             {
                 "text": "Learn more about Saint John's Health Center Foundation",
                 "url": "https://saintjohnsfoundation.org/"
@@ -129,11 +143,13 @@
         "is-current": false,
         "slug": "mothers-day",
         "description": "For Mother's Day, we had the privilege of singing to the inspiring women at the Downtown Women's Center.",
-        "images": [
+        "images":
+        [
             "mothers-day-1.png",
             "mothers-day-2.jpg"
         ],
-        "links": [
+        "links":
+        [
             {
                 "text": "Learn more about the Downtown Women's Center",
                 "url": "https://downtownwomenscenter.org/"

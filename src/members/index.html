@@ -39,8 +39,8 @@ root: ../
                             <img src="{{root}}assets/photos/members/{{member.relative-img-src}}" class="portrait portrait-{{member.slug}} shadow" alt="{{member.name | escape}}">
                         </div>
                         <p class="lead caption-heading">{{ member.name }}</p>
-                        {%- if member.leadership-position != "" -%}
-                        <p class="caption">{{ member.leadership-position }}</p>
+                        {%- if member.leadership -%}
+                        <p class="caption">{{ member.leadership }}</p>
                         {%- endif -%}
                         <p class="caption">
                             {%- if member-info.is-light-color -%}
@@ -72,9 +72,13 @@ root: ../
                                                     <p class="lead caption">{{ member.pronouns }}</p>
                                                     <h3 class="dark-modal-heading">Voice Part</h3>
                                                     <p class="lead caption">{{ member.voice-part }}</p>
-                                                    {%- if member.leadership-position != "" -%}
-                                                    <h3 class="dark-modal-heading">Leadership Position</h3>
-                                                    <p class="lead caption">{{ member.leadership-position }}</p>
+                                                    {%- if member.leadership -%}
+                                                    <h3 class="dark-modal-heading">Leadership Position(s)</h3>
+                                                    <p class="lead caption">{{ member.leadership }}</p>
+                                                    {%- endif -%}
+                                                    {%- if member.past-leadership -%}
+                                                    <h3 class="dark-modal-heading">Past Leadership Position(s)</h3>
+                                                    <p class="lead caption">{{ member.past-leadership }}</p>
                                                     {%- endif -%}
                                                     <h3 class="dark-modal-heading">Year Joined</h3>
                                                     <p class="lead caption">{{ member.year-joined }}</p>
@@ -85,7 +89,7 @@ root: ../
                                                 <p class="caption">{{ member.class }}</p>
                                                 <h4 class="dark-modal-heading">Major</h3>
                                                 <p class="caption">{{ member.major }}</p>
-                                                {%- if member.minor != "" -%}
+                                                {%- if member.minor -%}
                                                 <h4 class="dark-modal-heading">Minor</h3>
                                                 <p class="caption">{{ member.minor }}</p>
                                                 {%- endif -%}
@@ -101,7 +105,7 @@ root: ../
                                                 <p class="caption">{{ member.shower-song }}</p>
                                                 <h4 class="dark-modal-heading">Favorite Musical Artist</h3>
                                                 <p class="caption">{{ member.musical-artist }}</p>
-                                                {%- if member.quote != "" -%}
+                                                {%- if member.quote -%}
                                                 <h4 class="dark-modal-heading">Favorite Quote</h3>
                                                 <p class="caption">{{ member.quote }}</p>
                                                 {%- endif -%}
@@ -134,9 +138,13 @@ root: ../
                                                     <p class="lead caption">{{ member.pronouns }}</p>
                                                     <h3 class="light-modal-heading">Voice Part</h3>
                                                     <p class="lead caption">{{ member.voice-part }}</p>
-                                                    {%- if member.leadership-position != "" -%}
-                                                    <h3 class="light-modal-heading">Leadership Position</h3>
-                                                    <p class="lead caption">{{ member.leadership-position }}</p>
+                                                    {%- if member.leadership -%}
+                                                    <h3 class="light-modal-heading">Leadership Position(s)</h3>
+                                                    <p class="lead caption">{{ member.leadership }}</p>
+                                                    {%- endif -%}
+                                                    {%- if member.past-leadership -%}
+                                                    <h3 class="light-modal-heading">Past Leadership Position(s)</h3>
+                                                    <p class="lead caption">{{ member.past-leadership }}</p>
                                                     {%- endif -%}
                                                     <h3 class="light-modal-heading">Year Joined</h3>
                                                     <p class="lead caption">{{ member.year-joined }}</p>
@@ -147,7 +155,7 @@ root: ../
                                                 <p class="caption">{{ member.class }}</p>
                                                 <h4 class="light-modal-heading">Major</h3>
                                                 <p class="caption">{{ member.major }}</p>
-                                                {%- if member.minor != "" -%}
+                                                {%- if member.minor -%}
                                                 <h4 class="light-modal-heading">Minor</h3>
                                                 <p class="caption">{{ member.minor }}</p>
                                                 {%- endif -%}
@@ -163,7 +171,7 @@ root: ../
                                                 <p class="caption">{{ member.shower-song }}</p>
                                                 <h4 class="light-modal-heading">Favorite Musical Artist</h3>
                                                 <p class="caption">{{ member.musical-artist }}</p>
-                                                {%- if member.quote != "" -%}
+                                                {%- if member.quote -%}
                                                 <h4 class="light-modal-heading">Favorite Quote</h3>
                                                 <p class="caption">{{ member.quote }}</p>
                                                 {%- endif -%}
@@ -187,7 +195,7 @@ root: ../
                     {%- assign alumni_by_name = alumni-list | sort: "name" -%}
                     {%- for alum in alumni_by_name -%}
                     <div class="col col-sm-margin">
-                        {% if alum.voice-part != "" -%}
+                        {% if alum.voice-part -%}
                         <p class="lead" style="color: black; margin: 0;">{{ alum.name }}</p>
                         <p style="color: black; margin: 0;">{{ alum.voice-part }}</p>
                         {%- else -%}
