@@ -36,7 +36,7 @@ root: ../
                     {%- for member in members_by_name -%}
                     <section class="col col-sm-margin">
                         <div class="portrait-container">
-                            <img src="{{root}}assets/photos/members/{{member.relative-img-src}}" class="portrait portrait-{{member.slug}} shadow" alt="{{member.name | escape}}">
+                            <img src="{{root}}assets/photos/members/{{member.slug}}.jpg" class="portrait portrait-{{member.slug}} shadow" alt="{{member.name | escape}}">
                         </div>
                         <p class="lead caption-heading">{{ member.name }}</p>
                         {%- if member.leadership -%}
@@ -65,7 +65,7 @@ root: ../
                                         <div class="row row-lg-margin row-cols-1 row-cols-lg-2">
                                             <div class="col col-lg-margin">
                                                 <div class="portrait-container modal-portrait">
-                                                    <img class="portrait-{{member.slug}} portrait shadow" src="{{root}}assets/photos/members/{{member.relative-img-src}}" alt="{{member.name | escape}}">
+                                                    <img class="portrait-{{member.slug}} portrait shadow" src="{{root}}assets/photos/members/{{member.slug}}.jpg" alt="{{member.name | escape}}">
                                                 </div>
                                                 <div class="text-start">
                                                     <h3 class="dark-modal-heading">Pronouns</h3>
@@ -131,7 +131,7 @@ root: ../
                                         <div class="row row-lg-margin row-cols-1 row-cols-lg-2">
                                             <div class="col col-lg-margin">
                                                 <div class="portrait-container modal-portrait">
-                                                    <img class="portrait-{{member.slug}} portrait shadow" src="{{root}}assets/photos/members/{{member.relative-img-src}}" alt="{{member.name | escape}}">
+                                                    <img class="portrait-{{member.slug}} portrait shadow" src="{{root}}assets/photos/members/{{member.slug}}.jpg" alt="{{member.name | escape}}">
                                                 </div>
                                                 <div class="text-start">
                                                     <h3 class="light-modal-heading">Pronouns</h3>
@@ -192,14 +192,84 @@ root: ../
             <div class="container-md" style="text-align: left; color: black;">
                 <h1 style="color: var(--medleys-blue); margin-bottom: 0;">Alumni</h1>
                 <div class="row row-sm-margin row-cols-2 row-cols-sm-3 row-cols-lg-5" data-masonry='{"percentPosition": true }'>
-                    {%- assign alumni_by_name = alumni-list | sort: "name" -%}
-                    {%- for alum in alumni_by_name -%}
+                    {%- assign alumni_by_name = alum-info-list | sort: "name" -%}
+                    {%- for member in alumni_by_name -%}
                     <div class="col col-sm-margin">
-                        {% if alum.voice-part -%}
-                        <p class="lead" style="color: black; margin: 0;">{{ alum.name }}</p>
-                        <p style="color: black; margin: 0;">{{ alum.voice-part }}</p>
+                        {% if member.voice-part -%}
+                        <p class="lead" style="color: black; margin: 0;">{{ member.name }}</p>
+                        <p style="color: black; margin: 0;">{{ member.voice-part }}</p>
                         {%- else -%}
-                        <p class="lead" style="color: black; margin: 0;">{{ alum.name }}</p>
+                        <p class="lead" style="color: black; margin: 0;">{{ member.name }}</p>
+                        {%- endif -%}
+                        {% if member.slug -%}
+                        <p class="caption">
+                            <a class="dark-link" data-bs-toggle="modal" data-bs-target="#modal-member-{{member.slug}}">More</a>
+                        </p>
+                        <div class="modal modal-lg fade" id="modal-member-{{member.slug}}" tabindex="-1" role="dialog" style="text-align: left; color: white;" aria-labelledby="modal-label" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header dark-modal-header">
+                                        <h2 class="modal-title dark-modal-title">{{ member.name }}</h2>
+                                        <button type="button" class="btn close dark-modal-close" data-bs-dismiss="modal" aria-label="Close">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body dark-modal-body">
+                                        <div class="row row-lg-margin row-cols-1 row-cols-lg-2">
+                                            <div class="col col-lg-margin">
+                                                <div class="portrait-container modal-portrait">
+                                                    <img class="portrait-{{member.slug}} portrait shadow" src="{{root}}assets/photos/members/{{member.slug}}.jpg" alt="{{member.name | escape}}">
+                                                </div>
+                                                <div class="text-start">
+                                                    <h3 class="dark-modal-heading">Pronouns</h3>
+                                                    <p class="lead caption">{{ member.pronouns }}</p>
+                                                    <h3 class="dark-modal-heading">Voice Part</h3>
+                                                    <p class="lead caption">{{ member.voice-part }}</p>
+                                                    {%- if member.leadership -%}
+                                                    <h3 class="dark-modal-heading">Leadership Position(s)</h3>
+                                                    <p class="lead caption">{{ member.leadership }}</p>
+                                                    {%- endif -%}
+                                                    {%- if member.past-leadership -%}
+                                                    <h3 class="dark-modal-heading">Past Leadership Position(s)</h3>
+                                                    <p class="lead caption">{{ member.past-leadership }}</p>
+                                                    {%- endif -%}
+                                                    <h3 class="dark-modal-heading">Year Joined</h3>
+                                                    <p class="lead caption">{{ member.year-joined }}</p>
+                                                </div>
+                                            </div>
+                                            <div class="col col-lg-margin text-start">
+                                                <h4 class="dark-modal-heading" style="margin-top: 0;">Class</h3>
+                                                <p class="caption">{{ member.class }}</p>
+                                                <h4 class="dark-modal-heading">Major</h3>
+                                                <p class="caption">{{ member.major }}</p>
+                                                {%- if member.minor -%}
+                                                <h4 class="dark-modal-heading">Minor</h3>
+                                                <p class="caption">{{ member.minor }}</p>
+                                                {%- endif -%}
+                                                <h4 class="dark-modal-heading">Hometown</h3>
+                                                <p class="caption">{{ member.hometown }}</p>
+                                                <h4 class="dark-modal-heading">Interests/Hobbies</h3>
+                                                <p class="caption">{{ member.interests }}</p>
+                                                <h4 class="dark-modal-heading">Fun Fact</h3>
+                                                <p class="caption">{{ member.fun-fact }}</p>
+                                                <h4 class="dark-modal-heading">Audition Song</h3>
+                                                <p class="caption">{{ member.audition-song }}</p>
+                                                <h4 class="dark-modal-heading">Go-To Shower Song</h3>
+                                                <p class="caption">{{ member.shower-song }}</p>
+                                                <h4 class="dark-modal-heading">Favorite Musical Artist</h3>
+                                                <p class="caption">{{ member.musical-artist }}</p>
+                                                {%- if member.quote -%}
+                                                <h4 class="dark-modal-heading">Favorite Quote</h3>
+                                                <p class="caption">{{ member.quote }}</p>
+                                                {%- endif -%}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         {%- endif -%}
                     </div>
                     {%- endfor -%}

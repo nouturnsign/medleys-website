@@ -354,26 +354,87 @@
     {
         "name": "Trevor Gomez",
         "year-joined": "2018",
-        "voice-part": "Bass, Vocal Percussionist"
+        "voice-part": "Bass, Vocal Percussionist",
+        "pronouns": "He/Him",
+        "slug": "trevor-gomez",
+        "past-leadership": "Member Development Chair, Chief Financial Officer, Manager",
+        "class": "2023 (Master's)",
+        "major": "Mechanical Engineering",
+        "hometown": "Pleasant Hill, CA",
+        "interests": "Mechanical device design, volleyball, and eating",
+        "fun-fact": "I think getting eaten by a shark would be the best way to die.",
+        "audition-song": "\"I Want You Back\" by the Jackson 5",
+        "shower-song": "Juice Wrld",
+        "musical-artist": "Flume",
+        "quote": "\"Oh yeah. It's all coming together.\" —Kronk (<i>The Emperor's New Groove</i>)"
     },
     {
         "name": "Deena Doan",
         "year-joined": "2019",
-        "voice-part": "Alto"
+        "voice-part": "Alto",
+        "pronouns": "She/Her",
+        "slug": "deena-doan",
+        "past-leadership": "Member Development Chair, Love Notes Manager",
+        "class": "2023",
+        "major": "Human Biology and Society",
+        "minor": "Asian American Studies",
+        "hometown": "Concord, CA",
+        "interests": "Embroidery, singing, boba, and crime shows",
+        "fun-fact": "I took Idina Menzel's order at my job.",
+        "audition-song": "\"Elastic Heart\" by Sia",
+        "shower-song": "Adele, Hamilton, or any sad song",
+        "musical-artist": "Sam Smith",
+        "quote": "\"Treat others the way you want to be treated.\""
     },
     {
         "name": "Preyasi Kumar",
         "year-joined": "2019",
-        "voice-part": "Soprano"
+        "voice-part": "Soprano",
+        "pronouns": "She/Her",
+        "slug": "preyasi-kumar",
+        "past-leadership": "Member Development Chair, Music Director, Love Notes Manager",
+        "class": "2023",
+        "major": "Microbiology, Immunology, and Molecular Genetics",
+        "hometown": "Belmont, CA",
+        "interests": "Playing guitar, dogs, spicy food, bad jokes, hugs, and naps",
+        "fun-fact": "My typing speed is over 100 words per minute.",
+        "audition-song": "\"Once Upon a December\" from <i>Anastasia</i>",
+        "shower-song": "Probably some Disney or musical theatre song",
+        "musical-artist": "The Beatles",
+        "quote": "\"Preyasi, please shower. You look so ugly you're ruining the decor of the house.\" —My mom"
     },
     {
         "name": "Nivram Castro",
         "year-joined": "2019",
-        "voice-part": "Bass, Vocal Percussionist"
+        "voice-part": "Bass, Vocal Percussionist",
+        "pronouns": "He/Him",
+        "slug": "nivram-castro",
+        "past-leadership": "Music Director",
+        "class": "2023",
+        "major": "Music Education",
+        "hometown": "Eagle Rock, CA",
+        "interests": "Singing, violin, volleyball, breakdancing, anime, and food 😊",
+        "fun-fact": "I love orange chicken.",
+        "audition-song": "\"I Should Have Known\" by NSYNC",
+        "shower-song": "Any song from <i>Les Misérables</i> or <i>Newsies</i>",
+        "musical-artist": "Gabe Bondoc",
+        "quote": "\"The future belongs to those who believe in the beauty of their dreams.\" —Shoyo Hinata"
     },
     {
         "name": "Kayla Phan",
         "year-joined": "2020",
-        "voice-part": "Alto"
+        "voice-part": "Alto",
+        "pronouns": "She/Her",
+        "slug": "kayla-phan",
+        "past-leadership": "Birthday Chair",
+        "class": "2023",
+        "major": "Violin Performance and Music Education",
+        "hometown": "Oakland, CA",
+        "interests": "Violin, movie nights, cooking, games, CoDM, and food adventures!",
+        "fun-fact": "I LOVE pad thai. 😊",
+        "audition-song": "\"Say You Won't Let Go\" by James Arthur",
+        "shower-song": "Adele or Amy Winehouse",
+        "musical-artist": "Jeff Bernat",
+        "quote": "\"I wish you would jump in the oven! That would make my life a lot easier!\" —Gordon Ramsay"
     }
 ]
