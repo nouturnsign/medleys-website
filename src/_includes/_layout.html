@@ -25,6 +25,15 @@
                     Menu 
                     <img src="{{root}}assets/music-note-list.svg" alt="Menu" style="height: 1em; margin-left: 5px;">
                 </button>
+                <div class="collapse navbar-collapse" id="togglerNav">
+                    <div class="navbar-nav">
+                        {%- for item in navigation -%}
+                        <a class="nav-item nav-link {% if title == item.title %}active{% endif %}" href="{{root}}{{item.slug}}">{{item.title}}</a>
+                        {%- endfor -%}
+                    </div>
+                </div>
+            </div>
+        </nav>
 {{content}}
         <footer class="footer">
             <div class="container-md" style="text-align: center;">

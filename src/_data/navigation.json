@@ -1,0 +1,30 @@
+[
+    {
+        "slug": "",
+        "title": "Home"
+    },
+    {
+        "slug": "members",
+        "title": "Members"
+    },
+    {
+        "slug": "auditions",
+        "title": "Auditions"
+    },
+    {
+        "slug": "love-notes",
+        "title": "Love Notes"
+    },
+    {
+        "slug": "service",
+        "title": "Service"
+    },
+    {
+        "slug": "gallery",
+        "title": "Gallery"
+    },
+    {
+        "slug": "contact",
+        "title": "Contact"
+    }
+]
