@@ -57,7 +57,7 @@ root: ../
                             <div class="card-body">
                                 <p>{{ service.description }}</p>
                                 {%- for link in service.links -%}
-                                <p><a href="{{link.url}}" target="blank" class="gray-link">{{ link.text }}</a></p>
+                                <p><a href="{{link.url}}" target="_blank" class="gray-link">{{ link.text }}</a></p>
                                 {%- endfor -%}
                             </div>
                         </div>
@@ -110,7 +110,7 @@ root: ../
                             <div class="card-body">
                                 <p>{{ service.description }}</p>
                                 {%- for link in service.links -%}
-                                <p><a href="{{link.url}}" target="blank" class="gray-link">{{ link.text }}</a></p>
+                                <p><a href="{{link.url}}" target="_blank" class="gray-link">{{ link.text }}</a></p>
                                 {%- endfor -%}
                             </div>
                         </div>
