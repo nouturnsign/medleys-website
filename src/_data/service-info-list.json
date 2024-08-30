@@ -1,15 +1,47 @@
 [
     {
+        "organization": "Love Notes",
+        "is-current": true,
+        "slug": "love-notes",
+        "description": "Every year during the week of Valentine's Day, we raise money for the Downtown Women's Center through our Love Notes fundraiser during which we offer live and virtual serenades. This year, we delivered over 100 Love Notes and raised almost $2,000! You can support our cause by ordering a Love Note for a loved one.",
+        "images": 4,
+        "links":
+        [
+            {
+                "text": "Learn more about Love Notes",
+                "url": "https://medleysacappella.org/love-notes"
+            }
+        ]
+    },
+    {
         "organization": "Downtown Women's Center",
         "is-current": true,
         "slug": "downtown-womens-center",
-        "description": "Every year during the week of Valentine's Day, we raise money for the Downtown Women's Center through our Love Notes fundraiser during which we offer live and virtual serenades. This year, we delivered over 100 Love Notes and raised almost $2,000! We had the privilege of celebrating the success of Love Notes by singing for the incredible women at the Downtown Women's Center.",
+        "description": "We had the privilege of celebrating the success of our annual Love Notes fundraiser by singing for the incredible women at the Downtown Women's Center.",
         "images": 1,
         "links":
         [
             {
                 "text": "Learn more about the Downtown Women's Center",
                 "url": "https://downtownwomenscenter.org/"
+            }
+        ]
+    },
+    {
+        "organization": "Ronald Reagan UCLA Medical Center with UCLA People-Animal Connection",
+        "is-current": true,
+        "slug": "people-animal-connection",
+        "description": "We had the honor of caroling for the amazing patients and dedicated staff at Ronald Reagan UCLA Medical Center alongside UCLA People-Animal Connection's talented dogs and wonderful team. We sang some classic Christmas and Hanukkah carols for the December holidays and some of our Love Notes songs for Valentine's Day.",
+        "images": 3,
+        "links":
+        [
+            {
+                "text": "Learn more about UCLA People-Animal Connection",
+                "url": "https://www.uclahealth.org/programs/pac"
+            },
+            {
+                "text": "Read about us on KNX News",
+                "url": "https://www.audacy.com/knxnews/news/local/dogs-visit-kids-at-ucla-medical-center-for-valentines-day"
             }
         ]
     },
@@ -28,28 +60,10 @@
         ]
     },
     {
-        "organization": "Ronald Reagan UCLA Medical Center with UCLA People-Animal Connection",
-        "is-current": true,
-        "slug": "people-animal-connection",
-        "description": "This year, we had the honor of caroling for the amazing patients and dedicated staff at Ronald Reagan UCLA Medical Center alongside UCLA People-Animal Connection's talented dogs and wonderful team. We sang some classic Christmas and Hanukkah carols for the December holidays and some of our Love Notes songs for Valentine's Day.",
-        "images": 3,
-        "links":
-        [
-            {
-                "text": "Learn more about UCLA People-Animal Connection",
-                "url": "https://www.uclahealth.org/programs/pac"
-            },
-            {
-                "text": "Read about us on KNX News",
-                "url": "https://www.audacy.com/knxnews/news/local/dogs-visit-kids-at-ucla-medical-center-for-valentines-day"
-            }
-        ]
-    },
-    {
         "organization": "Habitat for Humanity with UCLA Bruin Belles Service Association",
         "is-current": true,
         "slug": "habitat-for-humanity",
-        "description": "We competed in UCLA Bruin Belles Service Association's first-ever charity dodgeball tournament—the BelleBall Tournament—and won! As the winners, we had the honor of donating $1,000 to a charity of our choice. We chose Habitat for Humanity as the charity to receive the donation.",
+        "description": "We competed in UCLA Bruin Belles Service Association's first-ever charity dodgeball tournament—the BelleBall Tournament—and won! As the winners, we had the opportunity to donate $1,000 to a charity of our choice. We chose Habitat for Humanity as the charity to receive the donation.",
         "images": 3,
         "links":
         [
@@ -67,13 +81,41 @@
         "organization": "Los Angeles Mission",
         "is-current": true,
         "slug": "la-mission",
-        "description": "Every year, we host a clothing drive during our holiday concert and collect clothing donations for Los Angeles Mission.",
-        "images": 1,
+        "description": "Every winter, we host a clothing drive during our holiday concert and collect clothing donations for Los Angeles Mission.",
+        "images": 3,
         "links":
         [
             {
                 "text": "Learn more about Los Angeles Mission",
                 "url": "https://losangelesmission.org/"
+            }
+        ]
+    },
+    {
+        "organization": "Los Angeles Unified School District",
+        "is-current": true,
+        "slug": "lausd",
+        "description": "Every spring, we organize a school supplies drive during our final concert and donate school supplies to the Los Angeles Unified School District's Homeless Education Office.",
+        "images": 3,
+        "links":
+        [
+            {
+                "text": "Learn more about the Homeless Education Office",
+                "url": "https://www.lausd.org/heo"
+            }
+        ]
+    },
+    {
+        "organization": "UCLA Santa Monica Medical Center",
+        "is-current": true,
+        "slug": "ucla-smmc",
+        "description": "We visited the pediatric unit at the UCLA Santa Monica Medical Center and had the honor of singing for the patients there as part of the Chase Child Life Program. We sang a mix of pop songs to help ease the stress of a hospital stay.",
+        "images": 0,
+        "links":
+        [
+            {
+                "text": "Learn more about the Chase Child Life Program",
+                "url": "https://www.chasefoundation.org/chase_child_life_program"
             }
         ]
     },
