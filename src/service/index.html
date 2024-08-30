@@ -25,17 +25,17 @@ root: ../
                             <div class="card-header" style="background-color: var(--medleys-blue);">
                                 <h3 style="color: var(--medleys-pink);">{{ service.organization }}</h3>
                             </div>
-                            {%- if service.images.size > 1 -%}
+                            {%- if service.images > 1 -%}
                             <div id="carousel-service-{{service.slug}}" class="carousel slide" style="margin: 0" data-bs-ride="carousel">
                                 <div class="carousel-inner">
-                                    {%- for image in service.images -%}
-                                    {%- if image == service.images.first -%}
+                                    {%- for i in (1..service.images) -%}
+                                    {%- if forloop.first -%}
                                     <div class="carousel-item active">
                                     {%- else -%}
                                     <div class="carousel-item">
                                     {%- endif -%}
                                         <div class="col-img-container img-{{service.slug}}">
-                                            <img src="{{root}}assets/photos/service/{{image}}" class="col-img" alt="{{service.name}}">
+                                            <img src="{{root}}assets/photos/service/{{service.slug}}-{{i}}.jpg" class="col-img" alt="{{service.name}}">
                                         </div>
                                     </div>
                                     {%- endfor -%}
@@ -49,9 +49,9 @@ root: ../
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
-                            {%- else -%}
+                            {%- elsif service.images == 1 -%}
                             <div class="col-img-container img-{{service.slug}}">
-                                <img src="{{root}}assets/photos/service/{{service.images.first}}" class="col-img" alt="{{service.name}}">
+                                <img src="{{root}}assets/photos/service/{{service.slug}}-1.jpg" class="col-img" alt="{{service.name}}">
                             </div>
                             {%- endif -%}
                             <div class="card-body">
@@ -78,17 +78,17 @@ root: ../
                             <div class="card-header" style="background-color: var(--medleys-pink);">
                                 <h3 style="color: var(--medleys-blue);">{{ service.organization }}</h3>
                             </div>
-                            {%- if service.images.size > 1 -%}
+                            {%- if service.images > 1 -%}
                             <div id="carousel-service-{{service.slug}}" class="carousel slide" style="margin: 0" data-bs-ride="carousel">
                                 <div class="carousel-inner">
-                                    {%- for image in service.images -%}
-                                    {%- if image == service.images.first -%}
+                                    {%- for i in (1..service.images) -%}
+                                    {%- if forloop.first -%}
                                     <div class="carousel-item active">
                                     {%- else -%}
                                     <div class="carousel-item">
                                     {%- endif -%}
                                         <div class="col-img-container img-{{service.slug}}">
-                                            <img src="{{root}}assets/photos/service/{{image}}" class="col-img" alt="{{service.name}}">
+                                            <img src="{{root}}assets/photos/service/{{service.slug}}-{{i}}.jpg" class="col-img" alt="{{service.name}}">
                                         </div>
                                     </div>
                                     {%- endfor -%}
@@ -102,9 +102,9 @@ root: ../
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
-                            {%- else -%}
+                            {%- elsif service.images == 1 -%}
                             <div class="col-img-container img-{{service.slug}}">
-                                <img src="{{root}}assets/photos/service/{{service.images.first}}" class="col-img" alt="{{service.name}}">
+                                <img src="{{root}}assets/photos/service/{{service.slug}}-1.jpg" class="col-img" alt="{{service.name}}">
                             </div>
                             {%- endif -%}
                             <div class="card-body">
