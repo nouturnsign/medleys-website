@@ -57,7 +57,11 @@ root: ../
                                                 <div class="text-start">
                                                     <h3 class="dark-modal-heading">Pronouns</h3>
                                                     <p class="lead caption">{{ member.pronouns }}</p>
+                                                    {%- if member.voice-part contains ',' -%}
+                                                    <h3 class="dark-modal-heading">Voice Parts</h3>
+                                                    {%- else -%}
                                                     <h3 class="dark-modal-heading">Voice Part</h3>
+                                                    {%- endif -%}
                                                     <p class="lead caption">{{ member.voice-part }}</p>
                                                     {%- if member.leadership -%}
                                                     {%- if member.leadership contains ',' -%}
@@ -141,7 +145,11 @@ root: ../
                                                 <div class="text-start">
                                                     <h3 class="light-modal-heading">Pronouns</h3>
                                                     <p class="lead caption">{{ member.pronouns }}</p>
+                                                    {%- if member.voice-part contains ',' -%}
+                                                    <h3 class="light-modal-heading">Voice Parts</h3>
+                                                    {%- else -%}
                                                     <h3 class="light-modal-heading">Voice Part</h3>
+                                                    {%- endif -%}
                                                     <p class="lead caption">{{ member.voice-part }}</p>
                                                     {%- if member.leadership -%}
                                                     {%- if member.leadership contains ',' -%}
@@ -248,7 +256,11 @@ root: ../
                                                 <div class="text-start">
                                                     <h3 class="dark-modal-heading">Pronouns</h3>
                                                     <p class="lead caption">{{ member.pronouns }}</p>
+                                                    {%- if member.voice-part contains ',' -%}
+                                                    <h3 class="dark-modal-heading">Voice Parts</h3>
+                                                    {%- else -%}
                                                     <h3 class="dark-modal-heading">Voice Part</h3>
+                                                    {%- endif -%}
                                                     <p class="lead caption">{{ member.voice-part }}</p>
                                                     {%- if member.leadership -%}
                                                     {%- if member.leadership contains ',' -%}
