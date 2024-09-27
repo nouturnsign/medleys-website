@@ -5,11 +5,11 @@
     },
     {
         "question": "What if I don't know exactly when I can come in for an audition?",
-        "answer": "We always accept walk-in auditions. Just come by the place where auditions are held sometime during auditions and we will do our best to fit you in! Keep in mind that we do have to give priority to people that have signed up for a spot, so you might have to wait for a bit."
+        "answer": "We always accept walk-in auditions. Just come by the John Wooden Center lobby sometime during auditions and we will do our best to fit you in! Keep in mind that we do have to give priority to people that have signed up for a spot, so you might have to wait for a bit."
     },
     {
         "question": "Where do I go for the audition?",
-        "answer": "Auditions this year will be held in the John Wooden Center. Come to the lobby of the John Wooden Center 10 minutes before your time. The lobby is located just outside the turnstiles when you enter through the front doors. There, you'll meet some members of Medleys who will take you to the audition room!"
+        "answer": "Auditions this year will be held in the John Wooden Center. Come to the lobby of the John Wooden Center 10 minutes before your time (and make sure to bring your BruinCard so you can swipe in). The lobby is located just outside the turnstiles when you enter through the front doors. There, you'll meet some members of Medleys who will take you to the audition room!"
     },
     {
         "question": "What is an audition usually like and how long will it take?",
@@ -38,5 +38,9 @@
     {
         "question": "When will I find out if I'm in Medleys?",
         "answer": "We will let everyone know the results of callbacks as soon as possible, but definitely before the decision day set by all a cappella groups."
+    },
+    {
+        "question": "If I join Medleys, how much of a time commitment is it?",
+        "answer": "Medleys usually rehearses 4 hours a week, which is fairly standard for most a cappella groups at UCLA. This quarter, our rehearsals are on Sundays from 6-8 PM and Wednesdays from 7-9 PM. We also perform several times a quarter at various locations in the LA area. Performances are usually on weekends and take 2-3 hours (including transportation). In addition, there are many social activities throughout the year—we love spending time together!"
     }
 ]
