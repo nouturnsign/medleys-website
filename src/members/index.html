@@ -60,11 +60,19 @@ root: ../
                                                     <h3 class="dark-modal-heading">Voice Part</h3>
                                                     <p class="lead caption">{{ member.voice-part }}</p>
                                                     {%- if member.leadership -%}
-                                                    <h3 class="dark-modal-heading">Leadership Position(s)</h3>
+                                                    {%- if member.leadership contains ',' -%}
+                                                    <h3 class="dark-modal-heading">Leadership Positions</h3>
+                                                    {%- else -%}
+                                                    <h3 class="dark-modal-heading">Leadership Position</h3>
+                                                    {%- endif -%}
                                                     <p class="lead caption">{{ member.leadership }}</p>
                                                     {%- endif -%}
                                                     {%- if member.past-leadership -%}
-                                                    <h3 class="dark-modal-heading">Past Leadership Position(s)</h3>
+                                                    {%- if member.past-leadership contains ',' -%}
+                                                    <h3 class="dark-modal-heading">Past Leadership Positions</h3>
+                                                    {%- else -%}
+                                                    <h3 class="dark-modal-heading">Past Leadership Position</h3>
+                                                    {%- endif -%}
                                                     <p class="lead caption">{{ member.past-leadership }}</p>
                                                     {%- endif -%}
                                                     <h3 class="dark-modal-heading">Year Joined</h3>
@@ -74,11 +82,21 @@ root: ../
                                             <div class="col col-lg-margin text-start">
                                                 <h4 class="dark-modal-heading" style="margin-top: 0;">Class</h3>
                                                 <p class="caption">{{ member.class }}</p>
+                                                {%- if member.major -%}
                                                 <h4 class="dark-modal-heading">Major</h3>
                                                 <p class="caption">{{ member.major }}</p>
+                                                {%- endif -%}
+                                                {%- if member.majors -%}
+                                                <h4 class="dark-modal-heading">Majors</h3>
+                                                <p class="caption">{{ member.majors }}</p>
+                                                {%- endif -%}
                                                 {%- if member.minor -%}
                                                 <h4 class="dark-modal-heading">Minor</h3>
                                                 <p class="caption">{{ member.minor }}</p>
+                                                {%- endif -%}
+                                                {%- if member.minors -%}
+                                                <h4 class="dark-modal-heading">Minors</h3>
+                                                <p class="caption">{{ member.minors }}</p>
                                                 {%- endif -%}
                                                 <h4 class="dark-modal-heading">Hometown</h3>
                                                 <p class="caption">{{ member.hometown }}</p>
@@ -126,11 +144,19 @@ root: ../
                                                     <h3 class="light-modal-heading">Voice Part</h3>
                                                     <p class="lead caption">{{ member.voice-part }}</p>
                                                     {%- if member.leadership -%}
-                                                    <h3 class="light-modal-heading">Leadership Position(s)</h3>
+                                                    {%- if member.leadership contains ',' -%}
+                                                    <h3 class="light-modal-heading">Leadership Positions</h3>
+                                                    {%- else -%}
+                                                    <h3 class="light-modal-heading">Leadership Position</h3>
+                                                    {%- endif -%}
                                                     <p class="lead caption">{{ member.leadership }}</p>
                                                     {%- endif -%}
                                                     {%- if member.past-leadership -%}
-                                                    <h3 class="light-modal-heading">Past Leadership Position(s)</h3>
+                                                    {%- if member.past-leadership contains ',' -%}
+                                                    <h3 class="light-modal-heading">Past Leadership Positions</h3>
+                                                    {%- else -%}
+                                                    <h3 class="light-modal-heading">Past Leadership Position</h3>
+                                                    {%- endif -%}
                                                     <p class="lead caption">{{ member.past-leadership }}</p>
                                                     {%- endif -%}
                                                     <h3 class="light-modal-heading">Year Joined</h3>
@@ -140,11 +166,21 @@ root: ../
                                             <div class="col col-lg-margin text-start">
                                                 <h4 class="light-modal-heading" style="margin-top: 0;">Class</h3>
                                                 <p class="caption">{{ member.class }}</p>
+                                                {%- if member.major -%}
                                                 <h4 class="light-modal-heading">Major</h3>
                                                 <p class="caption">{{ member.major }}</p>
+                                                {%- endif -%}
+                                                {%- if member.majors -%}
+                                                <h4 class="light-modal-heading">Majors</h3>
+                                                <p class="caption">{{ member.majors }}</p>
+                                                {%- endif -%}
                                                 {%- if member.minor -%}
                                                 <h4 class="light-modal-heading">Minor</h3>
                                                 <p class="caption">{{ member.minor }}</p>
+                                                {%- endif -%}
+                                                {%- if member.minors -%}
+                                                <h4 class="light-modal-heading">Minors</h3>
+                                                <p class="caption">{{ member.minors }}</p>
                                                 {%- endif -%}
                                                 <h4 class="light-modal-heading">Hometown</h3>
                                                 <p class="caption">{{ member.hometown }}</p>
@@ -215,11 +251,19 @@ root: ../
                                                     <h3 class="dark-modal-heading">Voice Part</h3>
                                                     <p class="lead caption">{{ member.voice-part }}</p>
                                                     {%- if member.leadership -%}
-                                                    <h3 class="dark-modal-heading">Leadership Position(s)</h3>
+                                                    {%- if member.leadership contains ',' -%}
+                                                    <h3 class="dark-modal-heading">Leadership Positions</h3>
+                                                    {%- else -%}
+                                                    <h3 class="dark-modal-heading">Leadership Position</h3>
+                                                    {%- endif -%}
                                                     <p class="lead caption">{{ member.leadership }}</p>
                                                     {%- endif -%}
                                                     {%- if member.past-leadership -%}
-                                                    <h3 class="dark-modal-heading">Past Leadership Position(s)</h3>
+                                                    {%- if member.past-leadership contains ',' -%}
+                                                    <h3 class="dark-modal-heading">Past Leadership Positions</h3>
+                                                    {%- else -%}
+                                                    <h3 class="dark-modal-heading">Past Leadership Position</h3>
+                                                    {%- endif -%}
                                                     <p class="lead caption">{{ member.past-leadership }}</p>
                                                     {%- endif -%}
                                                     <h3 class="dark-modal-heading">Year Joined</h3>
@@ -229,11 +273,21 @@ root: ../
                                             <div class="col col-lg-margin text-start">
                                                 <h4 class="dark-modal-heading" style="margin-top: 0;">Class</h3>
                                                 <p class="caption">{{ member.class }}</p>
+                                                {%- if member.major -%}
                                                 <h4 class="dark-modal-heading">Major</h3>
                                                 <p class="caption">{{ member.major }}</p>
+                                                {%- endif -%}
+                                                {%- if member.majors -%}
+                                                <h4 class="dark-modal-heading">Majors</h3>
+                                                <p class="caption">{{ member.majors }}</p>
+                                                {%- endif -%}
                                                 {%- if member.minor -%}
                                                 <h4 class="dark-modal-heading">Minor</h3>
                                                 <p class="caption">{{ member.minor }}</p>
+                                                {%- endif -%}
+                                                {%- if member.minors -%}
+                                                <h4 class="dark-modal-heading">Minors</h3>
+                                                <p class="caption">{{ member.minors }}</p>
                                                 {%- endif -%}
                                                 <h4 class="dark-modal-heading">Hometown</h3>
                                                 <p class="caption">{{ member.hometown }}</p>
