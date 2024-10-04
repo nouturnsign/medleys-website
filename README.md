@@ -55,6 +55,14 @@ View the site live by starting a local server with `npm run start`. To preview
 your changes, run `npm run build` to rebuild the site using Eleventy. Push
 changes to deploy.
 
+- When you run `npm run start` (or `npm start` for short), you should see
+  `[11ty] Server at http://localhost:8080/` or something similar. Go to this URL
+  in your browser. As long as `npm start` is running, you can view the webpage
+  locally.
+  - No one besides you can see these changes.
+- You should always build and start the app before merging changes onto `main`
+  to ensure that you didn't introduce a breaking change.
+
 ## Project Structure
 
 Currently, this website uses a static site generator, `11ty`. Generally
@@ -84,6 +92,13 @@ The following files are in `src/_data`:
 
 If you are just editing some text, find the corresponding file (e.g. the Contact
 page is in [`src/contact/index.html`]), and edit the text.
+
+Photos should be added in [`src/assets/photos`](src/assets/photos/).
+
+- This includes members' photos in
+  [`src/assets/photos/members/`](src/assets/photos/members/)
+- This includes members' photos in
+  [`src/assets/photos/service/`](src/assets/photos/service/)
 
 ## Using Version Control
 
