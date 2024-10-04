@@ -10,19 +10,29 @@ blocks, make sure to paste each line into Terminal one-by-one!
 
 ## Installations
 
-You should have installed the following software. These are essential for
-development:
+You should have installed the following software. See below for more
+instructions. These are essential for development:
 
 - [`git`](https://git-scm.com/downloads)
 - [`node`](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
-  - Use node version 22.8.0 or something similar.
+  - Use node version at least 22.8.0.
+- [Visual Studio Code](https://code.visualstudio.com/download)
+  - Technically, VSCode is not strictly necessary; that being said, it's easiest
+    if you're just getting started.
 
-For Mac users, use the following commands in Terminal. This will install
-additional tooling:
+To verify everything is installed, these commands should not fail.
 
-- XCode command line tools
-- [Homebrew](https://brew.sh/)
-- nvm
+```sh
+git -v
+node -v
+```
+
+For Mac users, use the following commands in Terminal to install `git` and
+`node`. This will install additional tooling:
+
+- XCode command line tools (this includes `git`)
+- [Homebrew](https://brew.sh/) (this is a package manager for macOS)
+- `nvm` (this helps manage `node` versions)
 
 ```sh
 xcode-select --install
@@ -30,13 +40,6 @@ xcode-select --install
 brew install nvm
 nvm install 22.8.0
 nvm use 22.8.0
-```
-
-To verify everything is working, these commands should not fail.
-
-```sh
-git -v
-node -v
 ```
 
 ## Setup
@@ -62,6 +65,8 @@ changes to deploy.
   - No one besides you can see these changes.
 - You should always build and start the app before merging changes onto `main`
   to ensure that you didn't introduce a breaking change.
+  - Generally speaking, you should not directly push to `main`. See below for
+    instructions on how to use branches in version control.
 
 ## Project Structure
 
@@ -100,12 +105,85 @@ Photos should be added in [`src/assets/photos`](src/assets/photos/).
 - This includes members' photos in
   [`src/assets/photos/service/`](src/assets/photos/service/)
 
-## Using Version Control
+Generally speaking, you should only concern yourself with the files found in
+`src`. Below is an overview of all folders.
 
-When you make changes, you need to add them to version control. This is done
-locally (on your computer) and remotely (to GitHub).
+### Folder Overview
 
-### Making Local Changes
+```text
+medleys-website
+├── README.md                                # this file
+├── eleventy.config.js                       # 11ty configuration
+├── package-lock.json                        # frozen version of packages
+├── package.json                             # required packages
+└── src
+    ├── CNAME                                # domain
+    ├── _data
+    │   ├── alum-info-list.json              # alumni info
+    │   ├── faq-list.json                    # FAQs
+    │   ├── gallery-video-list.json          # videos in gallery
+    │   ├── member-info-list.json            # current member info
+    │   ├── navigation.json                  # navigation bar
+    │   └── service-info-list.json           # service organization info
+    ├── _includes
+    │   └── _layout.html                     # layout template
+    ├── assets                               # assets used (e.g. logos, photos)
+    │   ├── ...
+    │   └── photos                           # photos used throughout
+    │       └── ...
+    ├── auditions
+    │   └── index.html                       # auditions page
+    ├── contact
+    │   ├── index.html                       # contact us page
+    │   └── thank-you
+    │       └── index.html                   # thank you after contacting us
+    ├── css                                  # styling
+    │   ├── ...
+    │   ├── custom.css                       # additional styling
+    │   └── photos.css                       # styling for photos (e.g. shift)
+    ├── files
+    │   └── ...                              # additional files to be deployed
+    ├── gallery
+    │   └── index.html                       # gallery page
+    ├── home
+    │   └── index.html                       # home page
+    ├── index.html                           # root page
+    ├── js                                   # required scripting
+    │   ├── ...
+    │   └── custom.js                        # additional scripting
+    ├── love-notes
+    │   └── index.html                       # love notes page
+    ├── members
+    │   └── index.html                       # current members page
+    └── service
+        └── index.html                       # service organization page
+```
+
+## Editing files
+
+When you make changes, you will use VSCode to edit the files, and then you will
+need to use `git` to add them to version control. This is done locally (on your
+computer) and remotely (to GitHub). `node` is used for managing packages and
+running the site locally; see above for instructions with `npm`.
+
+## Adding files
+
+You can add a new file within VSCode using the + in the top of the file
+navigator. You will see two icons: one is for adding a new file, the other is
+adding for a new folder.
+
+- You can also drag files directly from your file explorer into VSCode. For
+  example, if I wanted to add a photo of someone, I can drag the picture from
+  Finder (the file explorer on macOS) into VSCode.
+
+### Using VSCode
+
+When you open a folder, you should see all the files in the file navigator to
+the left. Clicking a folder will show the files and subfolders within. Clicking
+a file will show its contents in an editor. Within the editor, you can make
+changes. Use `ctrl/cmd + S` to save a file.
+
+### Using `git`
 
 The basic flow to add a change (local to your computer) is as follows:
 
@@ -127,8 +205,6 @@ git commit -m "your commit message"
 
 Generally speaking, you will need to create a new branch first. You commit
 changes to a branch, and then merge the branch onto the `main` branch.
-
-### Making Remote Changes
 
 The basic flow to create a new branch off of `main` and merge back onto `main`
 is as follows:
@@ -154,6 +230,8 @@ git checkout -b my-new-branch
 ```
 
 Follow the steps above to add changes (edit, stage, and commit).
+
+### Pushing to GitHub
 
 To create an upstream branch (on GitHub),
 
